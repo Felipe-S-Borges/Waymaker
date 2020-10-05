@@ -1,5 +1,8 @@
 # Bus-Stop-Alert
-Esse é um projeto pessoal sobre aplicativos para transporte público que tive na minha experiência como usuário desse sistema o ponto de partida para o projeto. A ideação do projeto começou a partir do principal questionamento, "Como uma pessoa que desconhece um determinado local é capaz é capaz de se locomover por ele?". Assim foi feita uma breve pesquisa com alguns usuários utilizando se de técnicas de UX para projetar uma arquitetura visual mais eficiente na transmição de informação aos usuários e que atende de fato as suas demandas.
+Esse é um projeto pessoal sobre aplicativos para transporte público que tive na minha experiência como usuário desse sistema o ponto de partida para o projeto. A ideação do projeto começou a partir do principal questionamento, "Como uma pessoa que desconhece um determinado local é capaz é capaz de se locomover por ele?". Assim foi feita uma breve pesquisa com alguns usuários utilizando se de técnicas de UX como, entrevistas, questionário, Análise de Benchmarking e testes de usabilidade para, assim, projetar uma arquitetura visual mais eficiente na transmição de informação aos usuários e que atende de fato as suas demandas.
+
+
+
 
 If you would like to check the UX process go to this link --> Breve :D
 
