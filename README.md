@@ -32,3 +32,4 @@ A partir da elaboração da relação de objetivos de usuários foi feito o flux
 <img src= "https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline"> <img src="https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline"> <img src="https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline"> <img src="https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline">
 
 <h2> Principais Contribuições</h2>
+<h2> Implementação</h2>
