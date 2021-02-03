@@ -1,7 +1,5 @@
 # Waymaker
-
-![background](https://user-images.githubusercontent.com/49257071/106795191-89bd0500-6638-11eb-9151-1ddac1417ea2.jpg)
-
+![background2](https://user-images.githubusercontent.com/49257071/106795443-d9033580-6638-11eb-97c7-6807e4d71ac7.jpg)
 <h2> Sobre o Projeto</h2>
 O Waymaker é um projeto pessoal sobre aplicativos direcionado aos usuários de transporte público(Frequentes ou esporádicos). Tal iniciativa teve na minha experiência como usuário desse mesmo sistema o ponto de partida para o projeto. A ideação do projeto começou a partir do principal questionamento, "Como uma pessoa que desconhece um determinado local é capaz de se locomover por ele?". Assim foi feita uma breve pesquisa com alguns usuários utilizando-se de técnicas de UX como, entrevistas, questionário, Análise de Benchmarking e testes de usabilidade para, assim, projetar uma arquitetura visual mais eficiente na transmissão de informação aos usuários e que atende de fato as suas demandas.
 
