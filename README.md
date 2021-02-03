@@ -20,7 +20,7 @@ Através de entrevistas, questionário e um mapa de empatia foi possível levant
   <li>Passo - Análise de Benchmark</li>
 Foram selecionados para a análise os aplicativos ofertados pelas empresas de transporte público da cidade do Rio de Janeiro, Manaus e Vitória. De modo geral os aplicativos não apresentavam um fluxo de navegação muito claro bem como uma hierarquia visual bem prejudicada. Mesmo assim esses aplicativos apresentavam alguns recursos de relevância para os usuários. O aplicativo referencial para este projeto passou a ser o Moovit, pois apresentava todos os recursos apresentados pelos aplicativos anteriores e mais alguns, como, monitoramento de trajeto. O único recurso ausente é o tempo real de previsão dos veículos.
   <li>Passo - Personas e Definição de requisitos</li>
-A partir da elaboração de perfis de Personas as quais comportassem as principais características dos usuários de transporte público se deu a construção de alguns cenários de caso de uso, assim a partir da análise desses passos foi possível levantar a relação de objetivos que o usuário tem ao utilizar o sistema.
+A partir da elaboração de perfis de Personas(6 personas) as quais comportassem as principais características dos usuários de transporte público se deu a construção de alguns cenários de caso de uso, assim a partir da análise desses passos foi possível levantar a relação de objetivos que o usuário tem ao utilizar o sistema.
   
 </ol>
 
