@@ -25,6 +25,8 @@ A partir da elaboração de perfis de Personas as quais comportassem as principa
 </ol>
 
 <h2> Interface de usuário</h2>
-A partir da elaboração da relação de objetivos foi feito o fluxo de telas em baixa fidelidade, a construção de um protótio inicial o qual foi submetido a alguns testes com usuário e a partir das coletas foram implementadas novas alterações e novos testes. Esse é o resultado obtido até o momento.
+A partir da elaboração da relação de objetivos de usuários foi feito o fluxo de telas em baixa fidelidade, a construção de um protótipo inicial o qual foi submetido a alguns testes com usuário e a partir das informações coletadas foram implementadas novas alterações e novos testes subsequentes. Esse é o resultado obtido até o momento.
 
-<img scr= "https://github.com/FelipeLee22/Waymaker/Inicio.png">
+<img src= "https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline"> <img src="https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline"> <img src="https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline"> <img src="https://github.com/FelipeLee22/Waymaker/blob/master/Inicio.png" width="24%" style ="display:inline">
+
+
