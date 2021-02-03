@@ -13,8 +13,9 @@ This is a personal project about mobile aplications for public transport. I had 
 
 
 <h2> Processo </h2>
-1º Passo - Pesquisa exploratória
+<ol>
+  <li>Passo - Pesquisa exploratória</li>
 Através de entrevistas, questionário e um mapa de empatia foi possivel levantar algumas informações sobre como os usuários se sentem frente as dificuldades que enfrentam na utilização do sistema de transporte público. Sentimentos de insegurança, frustração e ansiedade foram expostos pela maioria dos entrevistados. Dentre as principais dificuldades relatadas estavam a dificuldade de acesso a informações sobre o sistema e orientações sobre trajetos. Na maioria das vezes os usuários recorrem a outros usuários para ter tais informações.
-
+</ol>
 
 <h2> Interface de usuário</h2>
