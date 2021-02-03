@@ -21,7 +21,7 @@ Foram selecionados para a análise os aplicativos ofertados pelas empresas de tr
   <li>Passo - Personas e Definição de requisitos</li>
 A partir da elaboração de perfis de Personas as quais comportassem as principais características dos usuários de transporte público se deu a construção de alguns cenários de caso de uso, assim a partir da análise desses passos foi possível levantar a relação de objetivos que o usuário tem ao utilizar o sistema.
   
- 
 </ol>
 
 <h2> Interface de usuário</h2>
+A partir da elaboração da relação de objetivos foi feito o fluxo de telas em baixa fidelidade, a construção de um protótio inicial o qual foi submetido a alguns testes com usuário e a partir das coletas foram implementadas novas alterações e novos testes. Esse é o resultado obtido até o momento.
