@@ -1,0 +1,79 @@
+.homeContainer{
+
+    background-color: var(--bg-light-gold);
+    height: 100vh;
+}
+.homeContainer header{
+
+    height: calc(100vh - 70%);
+    background-color: var(--bg-dark-gold);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+
+.homeContainer header div:first-child{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homeContainer header div:last-child{
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.homeContainer header div:last-child button{
+
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 2rem;
+    font-size: 1rem;
+}
+
+.searchLocation{
+
+    border: 0 solid ;
+    color: var(--letter-light-blue);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.shareLocation {
+
+    background-color: transparent;
+    border: 2px solid var(--letter-dark-blue);
+    color: var(--letter-dark-blue);
+    margin-top: 0.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.homeContainer nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 95%);
+    background-color: var(--bg-navy-blue);
+    border-radius: 5px 5px 0 0;
+    padding: 0 1.5rem;
+}
+
+.homeContainer nav span:first-child{
+
+    color: var(--letter-white);
+}
+
+.homeContainer nav span:last-child{
+
+    color: var(--letter-green);
+}

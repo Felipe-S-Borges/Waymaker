@@ -1,0 +1,48 @@
+/* Variaveis globais de cores */
+
+:root {
+
+    --bg-navy-blue:#05519a;
+    --bg-dark-gold:#fff7b3;
+    --bg-light-gold:#fffbda;
+    --bg-green:#8dc640;
+
+    --letter-white:#ffffff;
+    --letter-green:#09ff03;
+    --letter-light-blue:#2cb7ea;
+    --letter-dark-blue:#05519a;
+
+    --pure-gold:#fde162;
+    --browny-gold:#917a50;
+    --just-anoder-golde:#fada3b;
+    --bar-gold:#ffff66;
+
+    --flag-green:#00c100;
+    --flag-orange:#e5a900;
+    --flag-violet:#a400cc;
+    /*--flag-red:*/
+
+
+
+}
+
+/* Configurações iniciais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea, button{
+
+    font: 400 1rem Arial, sans-serif;
+}
+
+button{
+    cursor:pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

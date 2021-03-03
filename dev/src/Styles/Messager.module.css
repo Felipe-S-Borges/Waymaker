@@ -1,0 +1,26 @@
+.messagerContainer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+
+}
+
+.messagerContainer img{
+
+    width: 50%;
+}
+
+.messagerContainer strong{
+
+    color: var(--letter-dark-blue);
+    padding: 0.5rem 0;
+}
+
+.messagerContainer p{
+    text-align: center;
+    width: 80%;
+    color: var(--letter-light-blue);
+}
