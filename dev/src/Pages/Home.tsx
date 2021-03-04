@@ -3,6 +3,7 @@ import styles from '../Styles/Home.module.css';
 import position_icon from '../Assets/position-icon.svg';
 import React from 'react';
 import { Messager } from '../Components/Messager';
+import { Favorite } from '../Components/Favorite';
 
 export function Home() {
 
@@ -34,9 +35,9 @@ export function Home() {
 
             <main>
                 {/**Componente de menssagem vaizia */}
-                <Messager />
+                {/*<Messager />*/}
                 {/**Componente de favoritos */}
-
+                <Favorite />
             </main>
         </div>
 
