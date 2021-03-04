@@ -57,12 +57,14 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
+
+
 .homeContainer nav{
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 95%);
+    height: calc(100vh - 95%); /* no modo vertical para o modo paisagem ver midia queries */
     background-color: var(--bg-navy-blue);
     border-radius: 5px 5px 0 0;
     padding: 0 1.5rem;
