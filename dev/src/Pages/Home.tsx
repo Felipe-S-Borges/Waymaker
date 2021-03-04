@@ -37,7 +37,11 @@ export function Home() {
                 {/**Componente de menssagem vaizia */}
                 {/*<Messager />*/}
                 {/**Componente de favoritos */}
-                <Favorite />
+                <div><Favorite /> </div>
+                <div><Favorite /> </div>
+                <div><Favorite /> </div>
+                
+                
             </main>
         </div>
 

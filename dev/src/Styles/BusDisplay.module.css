@@ -1,0 +1,22 @@
+.busIcon {
+
+    width: 1rem !important;
+    margin-right: 0.2rem;
+}
+
+
+
+
+.busDisplayConatiner{
+
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: var(--letter-white);
+    border-radius: 5px;
+    padding: 0.1rem 0.3rem;
+    margin-right: 0.2rem;
+    border-bottom: 3px solid var(--flag-green);
+
+}
