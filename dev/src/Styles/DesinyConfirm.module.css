@@ -1,0 +1,90 @@
+.DesinyConfirmContainer{
+
+    height: 100vh;
+    background-color: var(--bg-light-gold);
+}
+.DesinyConfirmContainer header{
+    height: calc(100vh - 65%);
+    padding-top: 1.5rem;
+    background-color: var(--bg-navy-blue);
+    
+}
+
+.DesinyConfirmContainer header > div{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.DesinyConfirmContainer header > div button{
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    outline: none;
+    border: none;
+    
+}
+
+
+
+.imputButton{
+
+    width: 86%;
+    padding: 0.3rem 0;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.imputButton img{
+
+    width: 1rem;
+    height: 1rem;
+}
+
+.iconButton{
+
+    background-color: transparent;
+    border: none;
+}
+.iconButton img{
+
+    width: 1.8rem;
+}
+
+.filtersButton{
+
+    font-size: 0.8rem;
+    border-radius: 50px;
+    width: 60%;
+    padding: 0.2rem 0;
+    background-color: transparent;
+    border: 1px solid var(--letter-white) !important;
+    color: var(--letter-white);
+    justify-content: center !important;
+}
+.destination button{
+
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 2rem;
+    font-size: 1rem;
+
+}
+
+.createRouteButton{
+
+    width: 100%;
+    padding: 0.8rem 0;
+    border-radius: 5px;
+    justify-content: center !important;
+    font-size: 1.2;
+    background-color: var(--bg-green);
+    color: var(--letter-white);
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
