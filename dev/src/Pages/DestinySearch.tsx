@@ -1,6 +1,6 @@
 // tela para definição de localização
 import back from '../Assets/back_arrow.svg'
-import { LocationSugestion } from '../Components/LocationSugestion';
+import { LocationSugestionDisplay } from '../Components/LocationSugestionDisplay';
 import styles from '../Styles/DestinySearch.module.css';
 
 export function DestinySearch(){
@@ -19,7 +19,7 @@ export function DestinySearch(){
             </div>
             <div> 
                     {/** componente de retorno com sugestão de localizações */}
-                     <LocationSugestion />
+                    <LocationSugestionDisplay />
                 </div>
 
         </div>

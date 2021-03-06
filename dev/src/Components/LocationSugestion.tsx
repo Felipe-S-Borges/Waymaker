@@ -9,11 +9,11 @@ export function LocationSugestion(){
         <div className={styles.locationSugestionContainer}>
             <div className={styles.distanceDisplay}> 
                 <div> <img src={icon} /> </div> 
-                <div>55.7 Km</div>
+                <div>55.7 km</div>
             </div>
             <div className={styles.descritionDisplay}> 
             <strong>Título do lugar</strong>
-            <p>descrição com o endereço do lugar para melhor confirmação</p>
+            <p>Descrição com o endereço do lugar para melhor confirmação</p>
             
              </div >
             {/** esse é um botão que aceita a sugestão de localização e passa o texto para cixa de pesquisa*/}

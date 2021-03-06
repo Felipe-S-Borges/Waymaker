@@ -2,7 +2,8 @@
     display: flex;
     background-color: transparent;
     border-bottom: 1px solid var(--letter-dark-blue);
-    margin: 0 1.5rem;
+    margin-top: 1rem;
+    
 
 }
 
@@ -12,7 +13,18 @@
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
+    color: var(--letter-dark-blue);
 }
+
+.distanceDisplay p{
+
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .distanceDisplay img{
 
     width: 1.5rem;
