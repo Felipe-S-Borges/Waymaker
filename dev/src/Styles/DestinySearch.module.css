@@ -6,9 +6,11 @@
     border: none;
 
 }
-.DestinySearchContainer div:first-child{
+.searchImput {
 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    background-color: var(--letter-white);
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.8);
 }
 .DestinySearchContainer input:focus{
 
@@ -16,11 +18,7 @@
 
 }
 
-.DestinySearchContainer div:first-child{
 
-    display: flex;
-    background-color: var(--letter-white);
-}
 
 .DestinySearchContainer div:first-child button:first-child{
 
@@ -41,15 +39,6 @@
 
 
 
-.DestinySearchContainer div:last-child{
-
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
 
 .searchButton{
 
