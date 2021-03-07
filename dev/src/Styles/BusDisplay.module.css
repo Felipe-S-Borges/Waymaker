@@ -2,21 +2,25 @@
 
     width: 1rem !important;
     margin-right: 0.2rem;
+    
 }
-
-
 
 
 .busDisplayConatiner{
 
-    display: flex;
-   justify-content: space-evenly;
-    align-items: center;
     
+    display: inline;
+    line-height: 0.8rem;
+    color: var(--letter-dark-blue);
+    font-size: 0.8rem;
     background-color: var(--letter-white);
-    border-radius: 5px;
-    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+    padding: 0.2rem 0.2rem;
     margin-right: 0.2rem;
-    border-bottom: 3px solid var(--flag-green);
+    border: 0.5px;
+    border: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: var(--flag-green);
 
 }

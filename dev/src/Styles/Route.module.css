@@ -1,0 +1,27 @@
+
+.routeContainer{
+
+    border-bottom: 1px solid gray;
+}
+
+.routeContainer img {
+
+    width: 1.5rem;
+    
+}
+.routeContainer div:first-child{
+
+    font-size: 0.9rem;
+    color:var(--letter-dark-blue)
+}
+.busSequence {
+
+    display: flex;
+    align-items: center;
+    background-color: var(--pure-gold);
+    padding: 0.5rem 0.2rem;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 0.5rem;
+    
+}

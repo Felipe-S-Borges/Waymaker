@@ -13,7 +13,9 @@ export function Favorite() {
                 <span className={styles.pin_icon}> <img src={pin_icon} ></img> </span>
                 <span> 
                     <strong> Casa</strong>
-                    <p> <BusDisplay /> voce está perto deste local</p>
+                    <p> 
+                        <BusDisplay flag="green" number="518" isFirst={true}/> 
+                        voce está perto deste local</p>
                 </span>
             </span>
             <span> <img src={menu} ></img> </span>

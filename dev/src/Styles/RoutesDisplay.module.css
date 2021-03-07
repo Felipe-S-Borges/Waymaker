@@ -4,7 +4,7 @@
     background-color: var(--bg-light-gold);
 }
 .DesinyConfirmContainer header{
-    height: calc(100vh - 65%);
+    height: auto;
     padding-top: 1.5rem;
     background-color: var(--bg-navy-blue);
     
@@ -86,4 +86,22 @@
     color: var(--letter-white);
     font-weight: 400;
     letter-spacing: 0.1rem;
+}
+
+.displayHeader{
+
+    height: 10%;
+    background-color: var(--bg-dark-gold);
+    border-radius: 5px 5px 0 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--letter-dark-blue);
+    font-size: 0.8rem;
+    justify-content: left !important;
+    z-index: 5;
+}
+
+.DesinyConfirmContainer main{
+
+    padding: 1rem 1rem;
 }
