@@ -1,0 +1,88 @@
+.directionsContainer{
+
+    height: 100vh;
+    background-color: var(--bg-light-gold);
+}
+.directionsContainer header{
+    height: auto;
+    background-color: var(--bg-navy-blue);
+    
+}
+
+.topBar {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem 0;
+    
+}
+.titleDirections{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--letter-white);
+    letter-spacing: 0.1rem;
+    width: 80%;
+}
+
+.mapsContainer{
+    height: 40vh;
+    background-color: gray;
+}
+
+.mapsContainer img{
+    
+    display: none;
+}
+
+
+.directionsBottomHeader{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    background-color: var(--bg-dark-gold);
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--letter-dark-blue);
+    font-size: 0.8rem;
+    padding: 0 1rem;
+   
+}
+.iconButton{
+
+    background-color: transparent;
+    border: none;
+}
+.iconButton img{
+
+    width: 1.8rem;
+}
+
+
+
+
+
+
+.displayHeader{
+
+    height: 10%;
+    background-color: var(--bg-dark-gold);
+    border-radius: 5px 5px 0 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--letter-dark-blue);
+    font-size: 0.8rem;
+    justify-content: left !important;
+    z-index: 5;
+}
+
+.directionsContainer main{
+
+    padding: 1rem 0;
+}
