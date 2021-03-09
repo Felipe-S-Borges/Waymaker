@@ -4,6 +4,7 @@
     border-radius: 5px;
     border: 1px solid var(--letter-dark-blue);
     background-color: transparent;
+    margin-top: 1.2rem;
 }
 
 .stageContainer li{
@@ -15,30 +16,3 @@
     
 }
 
-.stageDescription {
-
-    display: flex;
-    align-items: center;
-}
-.stageDescription > div:first-child{
-
-    padding-left: 0.8rem;
-}
-
-.stageDescription > div:last-child{
-
-    padding-left: 0.8rem;
-}
-
-.stageDescription > div:last-child strong{
-
-    color: var(--letter-dark-blue);
-    font-size: 1rem;
-}
-
-.stageDescription > div:last-child p{
-
-    color: var(--letter-light-blue);
-    font-size: 0.8rem;
-    padding-top: 0.1rem;
-}

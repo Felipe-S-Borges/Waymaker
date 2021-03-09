@@ -84,7 +84,7 @@
 
 .directionsContainer main{
 
-    padding: 1rem 0;
+    padding: 0 0;
 }
 
 .directionsContainer main ol{
@@ -98,6 +98,9 @@
 
     display: inline-block;
     transform: translateY(-50%);
+    color: var(--letter-dark-blue);
+    font-size: 1.2;
+    font-weight: 600;
 }
 
 .directionsContainer main li:before {

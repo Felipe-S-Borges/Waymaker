@@ -51,7 +51,8 @@ export function Directions(){
             <main>
 
                 <ol>
-                    <Stage />
+                    <Stage stage={0} />
+                    <Stage stage={1}/>
                     
                     
 
