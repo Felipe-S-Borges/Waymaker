@@ -11,6 +11,7 @@
     
     display: inline;
     line-height: 0.8rem;
+    min-width: 18%;
     color: var(--letter-dark-blue);
     font-size: 0.8rem;
     background-color: var(--letter-white);

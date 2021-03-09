@@ -1,0 +1,28 @@
+.descritionContainer img{
+    
+    width:1.2rem;
+
+}
+
+.descritionContainer{
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.descritionContainer div:first-child{
+    margin-right: 0.2rem;
+    
+}
+
+.plataform{
+
+    padding: 0.2rem 0.2rem;
+    justify-content: left;
+}
+
+.icon{
+
+    padding: 0.2rem 0.2rem;
+    justify-content: left;
+}

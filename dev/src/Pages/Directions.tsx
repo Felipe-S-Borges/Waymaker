@@ -6,6 +6,7 @@ import track from '../Assets/target.svg';
 import position_icon from '../Assets/position-icon.svg';
 import { Route } from '../Components/Route';
 import { Stage } from '../Components/Stage';
+import { Descritions } from '../Components/Descritions';
 
 
 
@@ -53,6 +54,11 @@ export function Directions(){
                 <ol>
                     <Stage stage={0} />
                     <Stage stage={1}/>
+                    <Descritions icon={back} />
+                    <Descritions icon={"P32"} />
+                    <Descritions icon={"P345"} />
+                    <Descritions icon={"P23"} />
+                    <Descritions icon={back} />
                     
                     
 

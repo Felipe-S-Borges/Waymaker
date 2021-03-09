@@ -1,0 +1,20 @@
+.busListItemConatiner{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.busListContainer img{
+
+    width: 1.4rem;
+}
+
+.busListContainer{
+
+    display: flex;
+    align-items: center;
+
+
+}

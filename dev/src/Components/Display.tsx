@@ -1,39 +1,30 @@
 // Esse compponente controla o que será exibido dentro do stage
 import styles from '../Styles/Display.module.css'; 
-interface displayProps{
-    icon: any;
-    
+import { BusListItem } from './BusListItem';
+import walkingTo_icon from '../Assets/walkTo_icon.svg';
 
-}
-export function Display(props:displayProps){
+export function Display(){
 
     return(
 
         <div className={styles.stageDescription}>
-                    <div> 
-                        { props.icon.length > 4? (
-
-                            <img src={props.icon} />  
-
-                        ):(
-
-                            <p>{props.icon}</p>
-                        )}
-                        
-                    </div>
+                    
                     
                     <div>
                         
-                         { props.icon.length > 4? (
+                           { /** 
                              <>
                             <strong> Caminhe até o ponto 1520 </strong> 
                             <p>Av. Luciano Satler Gurgel</p>  
                              </>
-
-                        ):(
-
-                            <p>lista</p>
-                        )}
+                            */}
+                       
+                            <>
+                            <BusListItem icon={"P32"} />
+                            {/**<BusListItem icon={"P32"}/> */}
+                            
+                            </>
+                        
 
 
 

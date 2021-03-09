@@ -27,6 +27,7 @@
 }
 
 /* Configurações iniciais */
+
 :not(ol){
     margin: 0;
     padding: 0;
@@ -35,7 +36,8 @@
 
 body, input, textarea, button{
 
-    font: 400 1rem Arial, sans-serif;
+    font: 400 1rem 'Roboto Condensed', sans-serif;
+    
 }
 
 button{
