@@ -1,0 +1,16 @@
+.stageContainer {
+
+    background-color: var(--letter-white);
+    border-radius: 5px;
+    border: 1px solid var(--letter-dark-blue);
+    background-color: transparent;
+}
+
+.stageContainer li{
+
+   
+    background-color: var(--bg-light-gold);
+    margin-left: 0.8rem;
+    padding: 0 0.3rem;
+    
+}

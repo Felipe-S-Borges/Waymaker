@@ -5,6 +5,7 @@ import map from '../Assets/map.png';
 import track from '../Assets/target.svg';
 import position_icon from '../Assets/position-icon.svg';
 import { Route } from '../Components/Route';
+import { Stage } from '../Components/Stage';
 
 
 
@@ -48,6 +49,13 @@ export function Directions(){
 
             {/**Rotas */}
             <main>
+
+                <ol>
+                    <Stage />
+                    
+                    
+
+                </ol>
 
                 
 

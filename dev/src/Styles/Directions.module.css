@@ -30,7 +30,7 @@
 }
 
 .mapsContainer{
-    height: 40vh;
+    height: 35vh;
     background-color: gray;
 }
 
@@ -85,4 +85,23 @@
 .directionsContainer main{
 
     padding: 1rem 0;
+}
+
+.directionsContainer main ol{
+    counter-reset: item;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 0.6rem;
+}
+
+.directionsContainer main li{
+
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+.directionsContainer main li:before {
+
+    content: counter(item) "º ";
+    counter-increment: item;
 }
