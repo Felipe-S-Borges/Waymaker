@@ -4,7 +4,6 @@ import onBoard_icon from '../Assets/onBoard_icon.svg';
 import offBoard_icon from '../Assets/offBoard_icon.svg';
 import walkTo_icon from '../Assets/walkTo_icon.svg';
 
-import { Display } from './Display';
 import React from 'react';
 import { Descritions } from './Descritions';
 
