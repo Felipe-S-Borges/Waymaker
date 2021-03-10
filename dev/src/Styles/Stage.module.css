@@ -5,14 +5,15 @@
     border: 1px solid var(--letter-dark-blue);
     background-color: transparent;
     margin-top: 1.2rem;
+    padding: 0 0.6rem;
 }
 
 .stageContainer li{
 
    
     background-color: var(--bg-light-gold);
-    margin-left: 0.8rem;
+    margin-left: 0;
     padding: 0 0.3rem;
-    
+    font-size: 1.2rem;
 }
 

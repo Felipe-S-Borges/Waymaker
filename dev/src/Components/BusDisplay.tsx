@@ -19,10 +19,10 @@ export function BusDisplay(props: BusProps){
     return(
         <div className={styles.busDisplayConatiner}  style={flag}>
             {props.isFirst == true?(
-                <img src={bus_icon} className={styles.busIcon} />
+                <div><img src={bus_icon} className={styles.busIcon} /></div>
             ):(<div> </div>)}
             
-            <strong>{props.number}</strong>
+            <div><strong>{props.number}</strong></div>
         </div>
     );
 } 

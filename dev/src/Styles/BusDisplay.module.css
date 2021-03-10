@@ -9,17 +9,18 @@
 .busDisplayConatiner{
 
     
-    display: inline;
+    display: grid;
+    grid-template-columns: auto auto;
     line-height: 0.8rem;
-    min-width: 18%;
+    
     color: var(--letter-dark-blue);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     background-color: var(--letter-white);
     border-radius: 2px;
     padding: 0.2rem 0.2rem;
-    margin-right: 0.2rem;
-    border: 0.5px;
-    border: 1px;
+    margin-right: 0.6rem;
+    
+    
     border-bottom-style: solid;
     border-bottom-width: 3px;
     border-bottom-color: var(--flag-green);

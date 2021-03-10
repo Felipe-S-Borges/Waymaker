@@ -4,6 +4,11 @@ import back from '../Assets/back_arrow.svg';
 import map from '../Assets/map.png';
 import track from '../Assets/target.svg';
 import position_icon from '../Assets/position-icon.svg';
+import walkTo_icon from '../Assets/walkTo_icon.svg';
+import onBoard_icon from '../Assets/onBoard_icon.svg';
+import offBoard_icon from '../Assets/offBoard_icon.svg';
+
+
 import { Route } from '../Components/Route';
 import { Stage } from '../Components/Stage';
 import { Descritions } from '../Components/Descritions';
@@ -54,11 +59,12 @@ export function Directions(){
                 <ol>
                     <Stage stage={0} />
                     <Stage stage={1}/>
-                    <Descritions icon={back} />
-                    <Descritions icon={"P32"} />
-                    <Descritions icon={"P345"} />
-                    <Descritions icon={"P23"} />
-                    <Descritions icon={back} />
+                    <Descritions icon={walkTo_icon} direction={'0'} />
+                    <Descritions icon={onBoard_icon} direction={'1'} />
+                    <Descritions icon={"P32"} direction={'1'}/>
+                    <Descritions icon={"P345"} direction={'1'}/>
+                    <Descritions icon={"P23"} direction={'1'}/>
+                    <Descritions icon={offBoard_icon} direction={''} />
                     
                     
 

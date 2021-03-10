@@ -1,18 +1,33 @@
-.descritionContainer img{
+.iconImgSecondary{
     
-    width:1.2rem;
-
+    height:1.4rem;
+    padding: 0 0.2rem;
 }
 
+.iconImgPrimary{
+    height: 2rem;
+}
+
+.busTitle{
+    color: var(--letter-dark-blue);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
 .descritionContainer{
 
+    display: grid;
+    grid-template-columns: 2.2rem auto;
+    grid-column-gap: 0.6rem;
+    align-items: center;
+    
+    padding: 0.2rem 0;
+}
+.busIcons{
     display: flex;
     align-items: center;
     justify-content: right;
-}
-.descritionContainer div:first-child{
-    margin-right: 0.2rem;
-    
+    padding: 0.2rem 0.2rem;
+
 }
 
 .plataform{
@@ -23,6 +38,34 @@
 
 .icon{
 
-    padding: 0.2rem 0.2rem;
-    justify-content: left;
+    
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.directions p{
+
+    color: var(--letter-light-blue);
+    font-size: 0.8rem;
+}
+.directions p:first-child{
+
+    color: var(--letter-dark-blue);
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+}
+.directions span{
+
+    color: var(--letter-dark-blue);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.directions strong{
+
+    color: var(--letter-dark-blue);
+    font-size: 1rem;
+    
 }
