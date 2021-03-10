@@ -1,4 +1,4 @@
-//Componente <li> para a lista ordenada
+//Componente <li> para a lista ordenada que exibe os etapas do trajeto
 import styles from '../Styles/Stage.module.css';
 import onBoard_icon from '../Assets/onBoard_icon.svg';
 import offBoard_icon from '../Assets/offBoard_icon.svg';
@@ -10,26 +10,34 @@ import { Descritions } from './Descritions';
 
 interface stageProps{
 
-    stage:number;
+    stage:string;
 }
 
 export function Stage(props: stageProps){
     return(
        
-        <div className={styles.stageContainer}>
-            <li>Passo</li>
-            <Descritions icon={walkTo_icon} direction={'0'} />
-            <Descritions icon={onBoard_icon} direction={'1'} />
-            <Descritions icon={"P32"} direction={'1'}/>
-            <Descritions icon={"P345"} direction={'1'}/>
-            <Descritions icon={"P23"} direction={'1'}/>
-            <Descritions icon={offBoard_icon} direction={''} />
-            
-
+        props.stage?(
+            <div className={styles.stageContainer}>
+                <li>Passo</li>
+                <Descritions icon={onBoard_icon} direction={'1'} />
+                <Descritions icon={"P32"} direction={'1'}/>
+                <Descritions icon={"P23"} direction={'1'}/>
+                <hr /><div className={styles.moreOptions} >Mais opções</div>
+                <Descritions icon={offBoard_icon} direction={''} />
                 
 
+            </div> 
+
+        ):(
+            
+            <div className={styles.stageContainer}>
+                <li>Passo</li>
+                <Descritions icon={walkTo_icon} direction={'0'} />
                                                                  
-        </div>
+            </div>
+            
+        )
+        
 
     );
 }

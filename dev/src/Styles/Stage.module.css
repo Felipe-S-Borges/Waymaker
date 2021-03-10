@@ -4,7 +4,7 @@
     border-radius: 5px;
     border: 1px solid var(--letter-dark-blue);
     background-color: transparent;
-    margin-top: 1.2rem;
+    margin: 1.6rem auto;
     padding: 0 0.6rem;
 }
 
@@ -17,3 +17,14 @@
     font-size: 1.2rem;
 }
 
+.moreOptions{
+
+    text-align: right;
+    padding: 0 1rem;
+    color: var(--letter-light-blue);
+}
+
+.stageContainer hr{
+
+    border: 0.2px solid var(--letter-light-blue);
+}

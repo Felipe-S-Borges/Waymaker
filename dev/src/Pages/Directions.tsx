@@ -57,15 +57,19 @@ export function Directions(){
             <main>
 
                 <ol>
-                    <Stage stage={0} />
-                    <Stage stage={1}/>
+                    <Stage stage={''}/>
+                    <Stage stage={'1'} />
+                    <Stage stage={'1'} />
+                    <Stage stage={'1'} />
+                    <Stage stage={''} />
+                    {/** 
                     <Descritions icon={walkTo_icon} direction={'0'} />
                     <Descritions icon={onBoard_icon} direction={'1'} />
                     <Descritions icon={"P32"} direction={'1'}/>
                     <Descritions icon={"P345"} direction={'1'}/>
                     <Descritions icon={"P23"} direction={'1'}/>
                     <Descritions icon={offBoard_icon} direction={''} />
-                    
+                    */}
                     
 
                 </ol>

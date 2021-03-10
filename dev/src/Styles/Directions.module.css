@@ -85,6 +85,7 @@
 .directionsContainer main{
 
     padding: 0 0;
+    overflow-y:auto;
 }
 
 .directionsContainer main ol{
