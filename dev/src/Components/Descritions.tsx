@@ -14,6 +14,26 @@ interface DirectionsProps{
 }
 export function Descritions(props: DirectionsProps){
 
+    const numericToOrdinal = function(number: number) {
+
+        switch(number){
+
+            case 0: return 'erro';
+            case null: return 'erro';
+            case undefined: return 'erro';
+            
+            case 1: return 'Primeiro';
+            case 2: return 'Segundo';
+            case 3: return 'Terceiro';
+            case 4: return 'Quarto';
+            case 5: return 'Quinto';
+            case 6: return 'Sexto';
+            default: return `${number}º`
+               
+        }
+
+    }
+
     return(
 
         <div className={styles.descritionContainer}>
@@ -42,7 +62,7 @@ export function Descritions(props: DirectionsProps){
                                  </>
                              ):(
                                 <>
-                                <p> Primeiro embarque</p> 
+                                <p> {numericToOrdinal(0)} embarque</p> 
                                 <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
                                 </>
                              )}   
