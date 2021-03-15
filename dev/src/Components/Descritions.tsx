@@ -21,7 +21,6 @@ export function Descritions(props: DirectionsProps){
             case 0: return 'erro';
             case null: return 'erro';
             case undefined: return 'erro';
-            
             case 1: return 'Primeiro';
             case 2: return 'Segundo';
             case 3: return 'Terceiro';
