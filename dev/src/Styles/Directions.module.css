@@ -1,11 +1,14 @@
 .directionsContainer{
 
-    height: 100vh;
+    height: auto;
     background-color: var(--bg-light-gold);
 }
 .directionsContainer header{
     height: auto;
     background-color: var(--bg-navy-blue);
+    position: sticky;
+    top: 0;
+    z-index: 10;
     
 }
 
