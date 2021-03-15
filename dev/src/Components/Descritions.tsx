@@ -61,7 +61,7 @@ export function Descritions(props: DirectionsProps){
 
                     ):(
                         <div className={styles.busIcons}>
-                        <BusDisplay flag="green" number="55S1" isFirst={true} />
+                        <BusDisplay flag={`var(--flag-${'red'})`} number="031" isFirst={true} />
                         <div className={styles.busTitle}> Term. de Carapina </div>
                         {/**<div>agora</div>*/}
                         <div><img src={arCond} className={styles.iconImgSecondary}/></div>
