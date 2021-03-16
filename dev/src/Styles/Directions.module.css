@@ -35,6 +35,10 @@
 .mapsContainer{
     height: 35vh;
     background-color: gray;
+    background-image: url('../Assets/map.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
 
 .mapsContainer img{
