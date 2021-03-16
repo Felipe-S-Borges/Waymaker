@@ -1,0 +1,109 @@
+
+    {
+    "routeNumber": "0",
+    "routeTime":"28 min",
+    "routeStages":[
+        {   
+            
+            "identification":"1542",
+            "localization":"Av. Honório Gurgel",
+            "coordenates":{
+
+                "long":"565296.46584846",
+                "lat":"13565462.6654685"
+            }
+
+        },
+
+
+        [
+            {
+                "number":"518",
+                "name":"Terminal de Carapina",
+                "plataform":"P35",
+                "flag":"green",
+                "prevTime":"23",
+                "isFirst": null,
+                "resorces":{
+
+                    "wifi": true,
+                    "arCond": true,
+                    "acess": true,
+                    "stand": "80", 
+                    "sit": "100" 
+                }
+
+            },
+            {
+                "number":"535",
+                "name":"Terminal de Carapina",
+                "plataform":"P56",
+                "flag":"green",
+                "prevTime":"23",
+                "isFirst": null,
+                "resorces":{
+
+                    "wifi": true,
+                    "arCond": true,
+                    "acess": true,
+                    "stand": "80",
+                    "sit": "100" 
+                }
+            }
+            
+            
+
+        ],
+
+    
+        [
+            {
+                "number":"548",
+                "name":"Terminal de jacaraipe",
+                "plataform":"P55",
+                "flag":"orange",
+                "prevTime":"23",
+                "isFirst": null,
+                "resorces":{
+
+                    "wifi": true,
+                    "arCond": true,
+                    "acess": true,
+                    "stand": "80", 
+                    "sit": "100" 
+                }
+            },
+            {   
+                "number":"578",
+                "name":"Terminal de jacaraipe",
+                "plataform":"P55",
+                "flag":"orange",
+                "prevTime":"23",
+                "isFirst": null,
+                "resorces":{
+
+                    "wifi": true,
+                    "arCond": true,
+                    "acess": true,
+                    "stand": "80", 
+                    "sit": "100" 
+              }
+            
+            }
+        ],
+
+
+        {
+            
+            "identification":"3442",
+            "localization":"Av. Laura Mendes",
+            "coordenate":{
+                "long":"65296.46584846",
+                "lat":"73565462.6654685"
+            }
+            
+        }
+
+
+    ]
+}

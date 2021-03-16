@@ -12,109 +12,14 @@ import { Route } from '../Components/Route';
 import { Stage } from '../Components/Stage';
 import { Descritions, numericToOrdinal } from '../Components/Descritions';
 import { RoutesDisplay } from './RoutesDisplay ';
+import buspath from '../Assets/data.json';
 
 
 
 export function Directions(){
-
+    
     //A partir de um vetor será montado a descrição do trajeto 
-    const busRoute = {
-        routeNumber: 0,
-        routeTime:"28 min",
-        routeStages:[
-            {
-                //objeto ponto de onibus. Esse é o primeiro ponto encontrado pelo back-end perto do usuário
-                //elemento 0
-                identification:"1542",
-                localization:"Av. Honório Gurgel",
-                coordenates:{
-                    long:"565296.46584846",
-                    lat:"13565462.6654685"
-                }
-
-            },
-            [// Vetor com a lista de onibus que fazem o primeiro trajeto
-                {
-                    number:"518",
-                    name:"Terminal de Carapina",
-                    plataform:"P35",
-                    flag:"green",
-                    prevTime:"23",//minutos
-                    isFirst: null,
-                    resorces:{
-                        wifi: true,
-                        arCond: true,
-                        acess: true,
-                        stand: "80", //Porcento
-                        sit: "100" //Porcento
-                    }
-
-                },
-                {
-                    number:"535",
-                    name:"Terminal de Carapina",
-                    plataform:"P56",
-                    flag:"green",
-                    prevTime:"23",//minutos
-                    isFirst: null,
-                    resorces:{
-                        wifi: true,
-                        arCond: true,
-                        acess: true,
-                        stand: "80", //Porcento
-                        sit: "100" //Porcento
-                    }
-                }
-                
-                
-
-            ],
-            [// Vetor com a lista de onibus que fazem o primeiro trajeto
-                {
-                    number:"548",
-                    name:"Terminal de jacaraipe",
-                    plataform:"P55",
-                    flag:"orange",
-                    prevTime:"23",//minutos
-                    isFirst: null,
-                    resorces:{
-                        wifi: true,
-                        arCond: true,
-                        acess: true,
-                        stand: "80", //Porcento
-                        sit: "100" //Porcento
-                    }
-                },
-                {   
-                    number:"578",
-                    name:"Terminal de jacaraipe",
-                    plataform:"P55",
-                     flag:"orange",
-                    prevTime:"23",//minutos
-                    isFirst: null,
-                    resorces:{
-                        wifi: true,
-                        arCond: true,
-                        acess: true,
-                        stand: "80", //Porcento
-                        sit: "100" //Porcento
-                  }
-                
-                }
-            ],
-            {
-                //objeto ponto de onibus. Esse é o ponto encontrado pelo back-end perto do destino do usuario
-                //ultimo elemento do vetor
-                identification:"3442",
-                localization:"Av. Laura Mendes",
-                coordenates:{
-                    long:"65296.46584846",
-                    lat:"73565462.6654685"
-                }
-                
-            }
-        ]
-    }
+    //const busRoute = JSON.parse(buspath);
 
      //stage index = numero do estagio
     //busList lista de onibus
@@ -157,7 +62,7 @@ export function Directions(){
                 {/**Header de baixo */}
                 <div className={styles.directionsBottomHeader}>
 
-                <p> {numericToOrdinal(busRoute.routeNumber)} rota disponível</p> <span> {busRoute.routeTime}</span>
+                <p> {numericToOrdinal(1)} rota disponível</p> <span> 23 min</span>
 
                 </div>
                 
@@ -169,10 +74,10 @@ export function Directions(){
 
                 <ol>
                   
-                    <Stage stage={0} busList={busRoute.routeStages[0]} /> 
-                    <Stage stage={1} busList={busRoute.routeStages[1]} /> 
-                    <Stage stage={2} busList={busRoute.routeStages[2]} /> 
-                    <Stage stage={3} busList={busRoute.routeStages[3]} />
+                    <Stage stage={0} busList={0} /> 
+                    <Stage stage={1} busList={1} /> 
+                    <Stage stage={2} busList={2} /> 
+                    <Stage stage={3} busList={3} />
                     {/** 
                     <Stage stage={''}/>
                     <Stage stage={'1'} />

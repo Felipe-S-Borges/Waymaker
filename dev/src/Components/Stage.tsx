@@ -10,7 +10,7 @@ import { Descritions } from './Descritions';
 interface stageProps{
 
     stage:number;
-    busList:object;
+    busList:number;
 }
 
 export function Stage(props: stageProps){
