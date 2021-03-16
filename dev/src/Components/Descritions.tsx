@@ -1,4 +1,7 @@
-//teste
+/**=========================================================================================== 
+* Componente que exibe cada linha dentro do componete stage alternando entre icones e textos
+==============================================================================================
+*/
 import styles from '../Styles/Descritions.module.css';
 import arCond from '../Assets/ar_icon.svg';
 import wifi from '../Assets/wifi_icon.svg';

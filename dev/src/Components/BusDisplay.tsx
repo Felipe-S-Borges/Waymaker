@@ -1,4 +1,7 @@
-//Quadrado com o numero do ônibus e a bandeira
+/**=========================================================================================== 
+* Componente que exibe o numero do ônibus, ícone e a bandeira de trajeto
+==============================================================================================
+*/
 import React from 'react';
 import styles from '../Styles/BusDisplay.module.css';
 import bus_icon from '../Assets/bus_icon.svg';

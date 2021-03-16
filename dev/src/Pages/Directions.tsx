@@ -1,4 +1,7 @@
-// Tela de confirmação e edição de trajeto
+/**=========================================================================================== 
+* Tela de Direção do usuário, exibe cada rota individualmente
+==============================================================================================
+*/
 import styles from '../Styles/Directions.module.css';
 import back from '../Assets/back_arrow.svg';
 import map from '../Assets/map.png';
@@ -36,7 +39,14 @@ export function Directions(){
     return (
 
         <div className={styles.directionsContainer}>
-
+        {/**=========================================================================================== 
+         *  header 
+         *      cabeçalho
+         *      Mapa
+         *      Menu Lateral
+         *      Rodape
+         * =========================================================================================== 
+        */}
             <header>
 
                 <div className={styles.topBar}>  
@@ -45,9 +55,6 @@ export function Directions(){
                    <p className={styles.titleDirections}>
                         Direções
                     </p>
-                   
-
-                    
                 </div>
 
                 {/**Mapa com o trajeto marcado */}
@@ -59,7 +66,7 @@ export function Directions(){
 
                 {/**Componte menu da barra lateral */}
 
-                {/**Header de baixo */}
+                {/**Rodape */}
                 <div className={styles.directionsBottomHeader}>
 
                 <p> {numericToOrdinal(1)} rota disponível</p> <span> 23 min</span>
@@ -68,8 +75,18 @@ export function Directions(){
                 
                
             </header>
+            {/**=========================================================================================== */}
 
-            {/**Rotas */}
+
+
+
+
+            {/**===========================================================================================  
+             * main 
+             *      ol
+             *      Stage -- Representa cada estágio do trajeto com numeração
+             * =========================================================================================== 
+            */}
             <main>
 
                 <ol>
@@ -77,7 +94,7 @@ export function Directions(){
                     <Stage stage={0} busList={0} /> 
                     <Stage stage={1} busList={1} /> 
                     <Stage stage={2} busList={2} /> 
-                    <Stage stage={3} busList={3} />
+                    <Stage stage={''} busList={3} />
                     {/** 
                     <Stage stage={''}/>
                     <Stage stage={'1'} />
