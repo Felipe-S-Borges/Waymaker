@@ -25,11 +25,11 @@ export const numericToOrdinal = function(number: number, gender:number) {
         case null: return 'erro';
         case undefined: return 'erro';
         case 1: return gender == 1?'Primeiro':'Primeira';
-        case 2: return 'Segundo';
-        case 3: return 'Terceiro';
-        case 4: return 'Quarto';
-        case 5: return 'Quinto';
-        case 6: return 'Sexto';
+        case 2: return gender == 1?'Segundo':'Segunda';
+        case 3: return gender == 1?'Terceiro':'Terceira';
+        case 4: return gender == 1?'Quarto':'Quarta';
+        case 5: return gender == 1?'Quinto':'Quinta';
+        case 6: return gender == 1?'Sexto':'Sexta';
         default: return `${number}º`
            
     }
