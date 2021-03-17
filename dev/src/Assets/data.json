@@ -52,7 +52,7 @@
             },
             {
 
-                "destiny":"Terminal de Laranjeiras"
+                "destiny":"Terminal de Vila Velha"
             }
             
             
@@ -79,7 +79,7 @@
             },
             {   
                 "number":"578",
-                "name":"Terminal de jacaraipe",
+                "name":"Terminal de Laranjeiras",
                 "plataform":"P56",
                 "flag":"orange",
                 "prevTime":"23",

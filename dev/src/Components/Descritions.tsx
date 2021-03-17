@@ -102,8 +102,10 @@ export function Descritions(props: DirectionsProps){
 
                     ):(
                         <div className={styles.busIcons}>
-                        <BusDisplay flag={`var(--flag-${'red'})`} number="031" isFirst={true} />
-                        <div className={styles.busTitle}> Term. de Carapina </div>
+                            {console.log('mm')}
+                            {console.log(props.content)}
+                        <BusDisplay flag={`var(--flag-${props.content.flag})`} number={props.content.number} isFirst={true} />
+                        <div className={styles.busTitle}> {props.content.name} </div>
                         {/**<div>agora</div>*/}
                         <div><img src={arCond} className={styles.iconImgSecondary}/></div>
                         <div><img src={wifi} className={styles.iconImgSecondary} /> </div>
