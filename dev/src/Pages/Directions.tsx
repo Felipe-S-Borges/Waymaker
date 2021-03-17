@@ -69,7 +69,7 @@ export function Directions(){
                 {/**Rodape */}
                 <div className={styles.directionsBottomHeader}>
 
-                <p> {numericToOrdinal(buspath.routeNumber + 1,0)} rota disponível</p> <span> {buspath.routeTime} min</span>
+                <p> {numericToOrdinal(buspath.routeNumber + 1, 0)} rota disponível</p> <span> {buspath.routeTime} min</span>
 
                 </div>
                 

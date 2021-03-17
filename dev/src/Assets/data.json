@@ -38,7 +38,7 @@
                 "number":"535",
                 "name":"Terminal de Carapina",
                 "plataform":"P36",
-                "flag":"green",
+                "flag":"red",
                 "prevTime":"23",
                 "isFirst": null,
                 "resorces":{
@@ -65,7 +65,7 @@
                 "number":"548",
                 "name":"Terminal de jacaraipe",
                 "plataform":"P55",
-                "flag":"orange",
+                "flag":"violet",
                 "prevTime":"23",
                 "isFirst": null,
                 "resorces":{
