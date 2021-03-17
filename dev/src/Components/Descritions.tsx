@@ -63,7 +63,9 @@ export function Descritions(props: DirectionsProps){
                             <div className={styles.directions}>
                              {props.direction === "1" ?(
                                  <>
-                                 <p> {numericToOrdinal(0)} embarque</p> 
+                                 {console.log('stageeee')}
+                                 {console.log(props.content.stage)}
+                                 <p> {numericToOrdinal(props.content.stage)} embarque</p> 
                                  <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
                                  </>
                              ):(

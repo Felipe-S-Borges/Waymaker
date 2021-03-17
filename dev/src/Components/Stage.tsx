@@ -27,7 +27,7 @@ export function Stage(props: stageProps){
                 <li>Passo</li>
                 {console.log('stage' + props.stage)}
                 {console.log(props)}
-                <Descritions icon={onBoard_icon} direction={'1'} content={props.busList} />
+                <Descritions icon={onBoard_icon} direction={'1'} content={props} />
 
                 {/**Aqui entra um loop */}
                 <Descritions icon={props.busList[0].plataform} direction={'1'} content={props.busList[0]} />
