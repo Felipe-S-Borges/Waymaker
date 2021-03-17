@@ -17,14 +17,14 @@ interface DirectionsProps{
     content:any;
 }
 
-export const numericToOrdinal = function(number: number) {
+export const numericToOrdinal = function(number: number, gender:number) {
 
     switch(number){
 
         case 0: return 'erro';
         case null: return 'erro';
         case undefined: return 'erro';
-        case 1: return 'Primeiro';
+        case 1: return gender == 1?'Primeiro':'Primeira';
         case 2: return 'Segundo';
         case 3: return 'Terceiro';
         case 4: return 'Quarto';
@@ -65,7 +65,7 @@ export function Descritions(props: DirectionsProps){
                                  <>
                                  {console.log('stageeee')}
                                  {console.log(props.content.stage)}
-                                 <p> {numericToOrdinal(props.content.stage)} embarque</p> 
+                                 <p> {numericToOrdinal(props.content.stage,1)} embarque</p> 
                                  <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
                                  </>
                              ):(
