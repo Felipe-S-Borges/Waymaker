@@ -5,8 +5,8 @@
     "routeStages":[
         {   
             
-            "identification":"1542",
-            "localization":"Av. Honório Gurgel",
+            "identification":"1042",
+            "localization":"Av.Honório Gurgel Tessa",
             "coordenates":{
 
                 "long":"565296.46584846",
@@ -37,7 +37,7 @@
             {
                 "number":"535",
                 "name":"Terminal de Carapina",
-                "plataform":"P56",
+                "plataform":"P36",
                 "flag":"green",
                 "prevTime":"23",
                 "isFirst": null,
@@ -49,6 +49,10 @@
                     "stand": "80",
                     "sit": "100" 
                 }
+            },
+            {
+
+                "destiny":"Terminal de Laranjeiras"
             }
             
             
@@ -76,7 +80,7 @@
             {   
                 "number":"578",
                 "name":"Terminal de jacaraipe",
-                "plataform":"P55",
+                "plataform":"P56",
                 "flag":"orange",
                 "prevTime":"23",
                 "isFirst": null,
@@ -89,21 +93,22 @@
                     "sit": "100" 
               }
             
+            },
+
+            {
+
+                "identification":"3442",
+                "localization":"Av. Laura Mendes",
+                "coordenate":{
+                    "long":"65296.46584846",
+                    "lat":"73565462.6654685"
+                }
+
             }
-        ],
+        ]
 
 
-        {
-            
-            "identification":"3442",
-            "localization":"Av. Laura Mendes",
-            "coordenate":{
-                "long":"65296.46584846",
-                "lat":"73565462.6654685"
-            }
-            
-        }
-
+       
 
     ]
 }

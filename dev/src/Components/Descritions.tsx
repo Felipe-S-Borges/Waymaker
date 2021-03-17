@@ -13,7 +13,8 @@ import { BusDisplay } from './BusDisplay';
 
 interface DirectionsProps{
     icon:string;
-    direction:string;
+    direction:any;
+    content:any;
 }
 
 export const numericToOrdinal = function(number: number) {
@@ -60,15 +61,29 @@ export function Descritions(props: DirectionsProps){
                         //Tru => onBoard   False => offBoard
                         props.direction?(
                             <div className={styles.directions}>
-                             {props.direction === "0"?(
+                             {props.direction === "1" ?(
                                  <>
-                                 <p> Caminhe até o ponto <span> 1520 </span></p> 
-                                 <p>Av. Luciano Satler Gurgel</p> 
+                                 <p> {numericToOrdinal(0)} embarque</p> 
+                                 <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
                                  </>
                              ):(
                                 <>
-                                <p> {numericToOrdinal(0)} embarque</p> 
-                                <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
+                                <p>Desembarque</p>
+                                {console.log('props f')}
+                                {console.log(props.content[props.content.length -1])}
+                                
+                                {props.content[props.content.length -1].destiny?(
+                                    
+                                    <div>
+                                    <strong> {props.content[props.content.length -1].destiny} </strong>
+                                    </div>
+                                ):(
+                                    <>
+                                    <strong> Desembarque no ponto {props.content[props.content.length -1].identification} </strong> 
+                                    <p>{props.content[props.content.length -1].localization}</p>
+                                    </>
+                                )}
+                                
                                 </>
                              )}   
                              
@@ -77,8 +92,9 @@ export function Descritions(props: DirectionsProps){
 
                             <div className={styles.directions}>
 
-                             <p>Desembarque</p>
-                             <strong> Terminal de Carapina </strong> 
+                            <p> Caminhe até o ponto <span> {props.content.identification} </span></p> 
+                            <p>{props.content.localization}</p>     
+                             
                               
                            </div>
                         )

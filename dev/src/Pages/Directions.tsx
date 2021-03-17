@@ -90,11 +90,12 @@ export function Directions(){
             <main>
 
                 <ol>
-                  
-                    <Stage stage={0} busList={0} /> 
-                    <Stage stage={1} busList={1} /> 
-                    <Stage stage={2} busList={2} /> 
-                    <Stage stage={''} busList={3} />
+                    {console.log(buspath.routeStages)}
+                    {/**Aqui entra um loop */}
+                    <Stage stage={0} busList={buspath.routeStages[0]} /> 
+                    <Stage stage={1} busList={buspath.routeStages[1]} /> 
+                    <Stage stage={2} busList={buspath.routeStages[2]} /> 
+                    
                     {/** 
                     <Stage stage={''}/>
                     <Stage stage={'1'} />
@@ -103,15 +104,7 @@ export function Directions(){
                     <Stage stage={''} />
 
                     */}
-                    {/** 
-                    <Descritions icon={walkTo_icon} direction={'0'} />
-                    <Descritions icon={onBoard_icon} direction={'1'} />
-                    <Descritions icon={"P32"} direction={'1'}/>
-                    <Descritions icon={"P345"} direction={'1'}/>
-                    <Descritions icon={"P23"} direction={'1'}/>
-                    <Descritions icon={offBoard_icon} direction={''} />
-                    */}
-                    
+                   
 
                 </ol>
 
