@@ -38,7 +38,7 @@
                 "number":"535",
                 "name":"Terminal de Carapina",
                 "plataform":"P36",
-                "flag":"red",
+                "flag":"green",
                 "prevTime":"23",
                 "isFirst": null,
                 "resorces":{
@@ -52,7 +52,7 @@
             },
             {
 
-                "destiny":"Terminal de Vila Velha"
+                "destiny":"Terminal de Carapina"
             }
             
             
@@ -81,7 +81,7 @@
                 "number":"578",
                 "name":"Terminal de Laranjeiras",
                 "plataform":"P56",
-                "flag":"orange",
+                "flag":"violet",
                 "prevTime":"23",
                 "isFirst": null,
                 "resorces":{

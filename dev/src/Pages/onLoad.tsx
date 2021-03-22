@@ -4,7 +4,7 @@ import logo from '../Assets/logo.svg';
 
 import styles from '../Styles/IsLoading.module.css';
 
-export function IsLoading(){
+export function OnLoad(){
 
     return (
 

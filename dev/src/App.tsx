@@ -3,7 +3,7 @@ import { DesinyConfirm } from './Pages/DesinyConfirm';
 import { DestinySearch } from './Pages/DestinySearch';
 import { Directions } from './Pages/Directions';
 import { Home } from './Pages/Home';
-import { IsLoading } from './Pages/onLoad';
+import { OnLoad } from './Pages/OnLoad';
 import { RoutesDisplay } from './Pages/RoutesDisplay ';
 
 
@@ -11,12 +11,18 @@ import { RoutesDisplay } from './Pages/RoutesDisplay ';
 function App() {
   return (
     <div className="App">
-      {/*<IsLoading >*/}
+      {/**/}
+      <OnLoad />
       {/*<Home />*/}
+      
       {/**<DestinySearch /> */}
+      
       {/**<DesinyConfirm /> */}
+      
       {/**<RoutesDisplay /> */}
-      <Directions />
+      
+      {/**  <Directions />*/}
+     
       
       
       
