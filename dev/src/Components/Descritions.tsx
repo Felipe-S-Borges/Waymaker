@@ -71,7 +71,7 @@ export function Descritions(props: DirectionsProps){
 
                                  ):(
 
-                                     <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
+                                     <p> Aguarde por algumas dessas opções na plataforma (P) indicada</p> 
                                  )}
                                  
                                  </>
