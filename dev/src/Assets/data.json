@@ -50,6 +50,25 @@
                     "sit": "100" 
                 }
             },
+
+            {
+                "number":"536",
+                "name":"Terminal de Carapina",
+                "plataform":"P37",
+                "flag":"green",
+                "prevTime":"23",
+                "isFirst": null,
+                "resorces":{
+
+                    "wifi": true,
+                    "arCond": true,
+                    "acess": true,
+                    "stand": "80",
+                    "sit": "100" 
+                }
+            },
+
+
             {
 
                 "destiny":"Terminal de Carapina"

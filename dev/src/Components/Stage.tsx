@@ -32,8 +32,15 @@ export function Stage(props: stageProps){
                 {/**Aqui entra um loop */}
                 <Descritions icon={props.busList[0].plataform} direction={'1'} content={props.busList[0]} />
                 <Descritions icon={props.busList[1].plataform} direction={'1'} content={props.busList[1]} />
+                {console.log(props.busList)}
+                {props.busList.length > 3?(
 
-                <hr /><div className={styles.moreOptions} >Mais opções</div>
+                    <><hr /><div className={styles.moreOptions} >Mais opções</div></>
+
+                ):(
+                    <></>
+                )}
+                
                 <Descritions icon={offBoard_icon} direction={'0'} content={props.busList} />
                 
 
