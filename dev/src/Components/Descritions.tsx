@@ -117,45 +117,47 @@ export function Descritions(props: DirectionsProps){
                         <BusDisplay flag={`var(--flag-${props.content.flag})`} number={props.content.number} isFirst={true} />
                         <div className={styles.busTitle}> {props.content.name} </div>
                         {/**<div>agora</div>*/}
-                        {props.content.resorces.arCond?(
+                        <div className={styles.incosContainer}>
+                                {props.content.resorces.arCond?(
 
-                            <div><img src={arCond} className={styles.iconImgSecondary} /></div>
-                        ):(
-                            <></>
-                        )}
+                                    <div><img src={arCond} className={styles.iconImgSecondary} /></div>
+                                ):(
+                                    <></>
+                                )}
 
-                        {props.content.resorces.wifi?(
+                                {props.content.resorces.wifi?(
 
-                            <div><img src={wifi} className={styles.iconImgSecondary} /></div>
-                        ):(
-                            <></>
-                        )}
+                                    <div><img src={wifi} className={styles.iconImgSecondary} /></div>
+                                ):(
+                                    <></>
+                                )}
 
 
-                        {props.content.resorces.acess?(
+                                {props.content.resorces.acess?(
 
-                            <div><img src={acess} className={styles.iconImgSecondary} /></div>
-                        ):(
-                            <></>
-                        )}
+                                    <div><img src={acess} className={styles.iconImgSecondary} /></div>
+                                ):(
+                                    <></>
+                                )}
 
-                        {props.content.resorces.stand?(
+                                {props.content.resorces.stand?(
 
-                            <div><img src={stand} className={styles.iconImgSecondary} /></div>
-                        ):(
-                            <></>
-                        )}
+                                    <div><img src={stand} className={styles.iconImgSecondary} /></div>
+                                ):(
+                                    <></>
+                                )}
 
-                        {props.content.resorces.sit?(
+                                {props.content.resorces.sit?(
 
-                            <div><img src={sit} className={styles.iconImgSecondary} /></div>
-                        ):(
-                            <></>
-                        )}
+                                    <div><img src={sit} className={styles.iconImgSecondary} /></div>
+                                ):(
+                                    <></>
+                                )}
+                                </div>
 
-                                               
-                        
-                    
+                                                    
+                                
+                            
                         </div>
 
                     )}

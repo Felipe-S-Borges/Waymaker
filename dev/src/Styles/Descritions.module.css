@@ -69,3 +69,10 @@
     font-size: 1rem;
     
 }
+
+.incosContainer{
+
+    display: flex;
+    flex-direction: row; 
+    
+}
