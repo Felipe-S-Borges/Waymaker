@@ -37,8 +37,7 @@ export const numericToOrdinal = function(number: number, gender:number) {
 }
 
 export function Descritions(props: DirectionsProps){
-
-   
+    
 
     return(
 
@@ -112,16 +111,51 @@ export function Descritions(props: DirectionsProps){
 
                     ):(
                         <div className={styles.busIcons}>
-                            {console.log('mm')}
-                            {console.log(props.content)}
+                            {console.log('mm------')}
+                            {console.log(props.content.resorces.wifi)}
+                           
                         <BusDisplay flag={`var(--flag-${props.content.flag})`} number={props.content.number} isFirst={true} />
                         <div className={styles.busTitle}> {props.content.name} </div>
                         {/**<div>agora</div>*/}
-                        <div><img src={arCond} className={styles.iconImgSecondary}/></div>
-                        <div><img src={wifi} className={styles.iconImgSecondary} /> </div>
-                        <div><img src={acess} className={styles.iconImgSecondary} /></div>
-                        <div><img src={stand} className={styles.iconImgSecondary} /></div>
-                        <div><img src={sit} className={styles.iconImgSecondary} /></div>
+                        {props.content.resorces.arCond?(
+
+                            <div><img src={arCond} className={styles.iconImgSecondary} /></div>
+                        ):(
+                            <></>
+                        )}
+
+                        {props.content.resorces.wifi?(
+
+                            <div><img src={wifi} className={styles.iconImgSecondary} /></div>
+                        ):(
+                            <></>
+                        )}
+
+
+                        {props.content.resorces.acess?(
+
+                            <div><img src={acess} className={styles.iconImgSecondary} /></div>
+                        ):(
+                            <></>
+                        )}
+
+                        {props.content.resorces.stand?(
+
+                            <div><img src={stand} className={styles.iconImgSecondary} /></div>
+                        ):(
+                            <></>
+                        )}
+
+                        {props.content.resorces.sit?(
+
+                            <div><img src={sit} className={styles.iconImgSecondary} /></div>
+                        ):(
+                            <></>
+                        )}
+
+                                               
+                        
+                    
                         </div>
 
                     )}

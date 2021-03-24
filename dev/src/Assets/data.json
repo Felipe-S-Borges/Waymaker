@@ -27,10 +27,10 @@
                 "resorces":{
 
                     "wifi": true,
-                    "arCond": true,
+                    "arCond": false,
                     "acess": true,
-                    "stand": "80", 
-                    "sit": "100" 
+                    "stand": false, 
+                    "sit": false 
                 }
 
             },
@@ -43,7 +43,7 @@
                 "isFirst": null,
                 "resorces":{
 
-                    "wifi": true,
+                    "wifi": false,
                     "arCond": true,
                     "acess": true,
                     "stand": "80",
@@ -62,7 +62,7 @@
 
                     "wifi": true,
                     "arCond": true,
-                    "acess": true,
+                    "acess": false,
                     "stand": "80",
                     "sit": "100" 
                 }
@@ -91,7 +91,7 @@
 
                     "wifi": true,
                     "arCond": true,
-                    "acess": true,
+                    "acess": false,
                     "stand": "80", 
                     "sit": "100" 
                 }
