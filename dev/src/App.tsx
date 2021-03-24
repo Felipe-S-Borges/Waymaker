@@ -11,8 +11,8 @@ import { RoutesDisplay } from './Pages/RoutesDisplay ';
 function App() {
   return (
     <div className="App">
-      {/**/}
-      <OnLoad />
+      {/*<OnLoad />*/}
+      
       {/*<Home />*/}
       
       {/**<DestinySearch /> */}
@@ -21,8 +21,8 @@ function App() {
       
       {/**<RoutesDisplay /> */}
       
-      {/**  <Directions />*/}
-     
+      {/**  */}
+     <Directions />
       
       
       

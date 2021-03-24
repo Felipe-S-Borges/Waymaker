@@ -66,7 +66,15 @@ export function Descritions(props: DirectionsProps){
                                  {console.log('stageeee')}
                                  {console.log(props.content.stage)}
                                  <p> {numericToOrdinal(props.content.stage,1)} embarque</p> 
-                                 <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
+                                 {props.content.stage == 1? (
+
+                                    <p> Aguarde por algumas dessas opções</p>
+
+                                 ):(
+
+                                     <p> Aguarde por algumas dessas opções na plataforma indicada</p> 
+                                 )}
+                                 
                                  </>
                              ):(
                                 <>
