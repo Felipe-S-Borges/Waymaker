@@ -1,0 +1,69 @@
+.modalContainer{
+
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContainer table{
+
+    
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.modalContainer td{
+
+    padding: 0.4rem 0;
+}
+
+.modalBorders{
+
+    background-color: white;
+    padding: 0.2rem 0.2rem;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.first{
+
+    background-color: yellow;
+    border: none !important;
+    padding: 0.7rem 0.2rem !important;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.rowFirst{
+    
+    border-radius: 10px;
+}
+
+
+
+.first:first-child{
+
+    width: 70%;
+}
+
+
+.modalContainer th{
+
+    background-color: white;
+    padding: 0.4rem 0;
+   
+    
+}
+
+
+

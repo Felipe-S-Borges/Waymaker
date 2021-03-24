@@ -1,4 +1,5 @@
 import React from 'react';
+import { BusModal } from './Components/BusModal';
 import { DesinyConfirm } from './Pages/DesinyConfirm';
 import { DestinySearch } from './Pages/DestinySearch';
 import { Directions } from './Pages/Directions';
@@ -22,7 +23,9 @@ function App() {
       {/**<RoutesDisplay /> */}
       
       {/**  */}
-     <Directions />
+      <Directions />
+      <BusModal />
+     
       
       
       
