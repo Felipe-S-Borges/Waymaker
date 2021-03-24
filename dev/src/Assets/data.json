@@ -30,7 +30,7 @@
                     "arCond": false,
                     "acess": true,
                     "stand": false, 
-                    "sit": false 
+                    "sit": "50" 
                 }
 
             },
@@ -46,7 +46,7 @@
                     "wifi": false,
                     "arCond": true,
                     "acess": true,
-                    "stand": "80",
+                    "stand": false,
                     "sit": "100" 
                 }
             },
@@ -63,8 +63,8 @@
                     "wifi": true,
                     "arCond": true,
                     "acess": false,
-                    "stand": "80",
-                    "sit": "100" 
+                    "stand": false,
+                    "sit": "70" 
                 }
             },
 
@@ -92,8 +92,8 @@
                     "wifi": true,
                     "arCond": true,
                     "acess": false,
-                    "stand": "80", 
-                    "sit": "100" 
+                    "stand": false, 
+                    "sit": "90" 
                 }
             },
             {   
@@ -108,8 +108,8 @@
                     "wifi": true,
                     "arCond": true,
                     "acess": true,
-                    "stand": "80", 
-                    "sit": "100" 
+                    "stand": false, 
+                    "sit": "62" 
               }
             
             },

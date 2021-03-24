@@ -142,14 +142,14 @@ export function Descritions(props: DirectionsProps){
 
                                 {props.content.resorces.stand?(
 
-                                    <div><img src={stand} className={styles.iconImgSecondary} /></div>
+                                    <div className={styles.popped}><img src={stand} className={`${styles.iconImgSecondary}`} />{`${props.content.resorces.stand}%`}</div>
                                 ):(
                                     <></>
                                 )}
 
                                 {props.content.resorces.sit?(
 
-                                    <div><img src={sit} className={styles.iconImgSecondary} /></div>
+                                    <div className={styles.popped}><img src={sit} className={`${styles.iconImgSecondary}`} />{`${props.content.resorces.sit}%`}</div>
                                 ):(
                                     <></>
                                 )}

@@ -4,6 +4,16 @@
     padding: 0 0.2rem;
 }
 
+.popped{
+
+    
+    display: flex;
+    color: var(--letter-dark-blue);
+    font-size: 0.8rem;
+}
+
+
+
 .iconImgPrimary{
     height: 2rem;
 }
