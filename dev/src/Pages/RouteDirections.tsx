@@ -13,7 +13,7 @@ import offBoard_icon from '../Assets/offBoard_icon.svg';
 
 import { Route } from '../Components/Route';
 import { Stage } from '../Components/Stage';
-import { Descritions, numericToOrdinal } from '../Components/Descritions';
+import { StageDescrition, numericToOrdinal } from '../Components/StageDescrition';
 import { AllRoutesDisplay } from './AllRoutesDisplay ';
 import buspath from '../Assets/data.json';
 
