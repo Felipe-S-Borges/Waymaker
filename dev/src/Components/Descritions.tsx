@@ -9,7 +9,7 @@ import acess from '../Assets/acess_icon.svg';
 import stand from '../Assets/stand_icon.svg';
 import sit from '../Assets/sit_icon.svg';
 import React from 'react';
-import { BusDisplay } from './BusDisplay';
+import { BusNumberDisplay } from './BusNumberDisplay';
 
 interface DirectionsProps{
     icon:string;
@@ -114,7 +114,7 @@ export function Descritions(props: DirectionsProps){
                             {console.log('mm------')}
                             {console.log(props.content.resorces.wifi)}
                            
-                        <BusDisplay flag={`var(--flag-${props.content.flag})`} number={props.content.number} isFirst={true} />
+                        <BusNumberDisplay flag={`var(--flag-${props.content.flag})`} number={props.content.number} isFirst={true} />
                         <div className={styles.busTitle}> {props.content.name} </div>
                         {/**<div>agora</div>*/}
                         <div className={styles.incosContainer}>

@@ -2,7 +2,7 @@
 import styles from '../Styles/Favorite.module.css';
 import pin_icon from '../Assets/pin_icon.svg';
 import menu from '../Assets/menu_pontos.svg';
-import { BusDisplay } from './BusDisplay';
+import { BusNumberDisplay } from './BusNumberDisplay';
 
 export function Favorite() {
 
@@ -14,7 +14,7 @@ export function Favorite() {
                 <span> 
                     <strong> Casa</strong>
                     <p> 
-                        <BusDisplay flag="green" number="518" isFirst={true}/> 
+                        <BusNumberDisplay flag="green" number="518" isFirst={true}/> 
                         voce está perto deste local</p>
                 </span>
             </span>

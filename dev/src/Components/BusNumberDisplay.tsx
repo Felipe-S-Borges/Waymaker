@@ -13,7 +13,7 @@ interface BusProps{
     isFirst:boolean;
 
 } 
-export function BusDisplay(props: BusProps){
+export function BusNumberDisplay(props: BusProps){
 
     const flag = {
         
