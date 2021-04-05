@@ -12,7 +12,7 @@ import onBoard_icon from '../Assets/onBoard_icon.svg';
 import offBoard_icon from '../Assets/offBoard_icon.svg';
 
 import { Route } from '../Components/Route';
-import { Stage } from '../Components/Stage';
+import { RouteStage } from '../Components/RouteStage';
 import { StageDescrition, numericToOrdinal } from '../Components/StageDescrition';
 import { AllRoutesDisplay } from './AllRoutesDisplay ';
 import buspath from '../Assets/data.json';
@@ -92,9 +92,9 @@ export function RouteDirections(){
                 <ol>
                     {console.log(buspath.routeStages)}
                     {/**Aqui entra um loop */}
-                    <Stage stage={0} busList={buspath.routeStages[0]} /> 
-                    <Stage stage={1} busList={buspath.routeStages[1]} /> 
-                    <Stage stage={2} busList={buspath.routeStages[2]} /> 
+                    <RouteStage stage={0} busList={buspath.routeStages[0]} /> 
+                    <RouteStage stage={1} busList={buspath.routeStages[1]} /> 
+                    <RouteStage stage={2} busList={buspath.routeStages[2]} /> 
                     
                     {/** 
                     <Stage stage={''}/>

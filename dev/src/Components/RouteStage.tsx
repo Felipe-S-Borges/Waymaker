@@ -16,7 +16,7 @@ interface stageProps{
     busList:any;
 }
 
-export function Stage(props: stageProps){
+export function RouteStage(props: stageProps){
     console.log(Array.isArray(props.busList) )
     const isList = Array.isArray(props.busList)
     return(
