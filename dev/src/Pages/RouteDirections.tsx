@@ -19,7 +19,7 @@ import buspath from '../Assets/data.json';
 
 
 
-export function Directions(){
+export function RouteDirections(){
     
     //A partir de um vetor será montado a descrição do trajeto 
     //const busRoute = JSON.parse(buspath);

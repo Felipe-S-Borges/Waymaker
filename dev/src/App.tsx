@@ -2,7 +2,7 @@ import React from 'react';
 import { BusModal } from './Components/BusModal';
 import { DesinyConfirm } from './Pages/DesinyConfirm';
 import { DestinySearch } from './Pages/DestinySearch';
-import { Directions } from './Pages/Directions';
+import { RouteDirections } from './Pages/RouteDirections';
 import { Home } from './Pages/Home';
 import { OnLoad } from './Pages/OnLoad';
 import { RoutesDisplay } from './Pages/RoutesDisplay ';
@@ -23,7 +23,7 @@ function App() {
       {/**<RoutesDisplay /> */}
       
       {/**  */}
-      <Directions />
+      <RouteDirections />
       <BusModal />
      
       
