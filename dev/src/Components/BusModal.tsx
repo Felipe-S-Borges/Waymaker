@@ -12,9 +12,9 @@ export function BusModal() {
                 <table>
                     <tr >
                         <th>Ponto <strong>20352</strong></th>
-                        <th><button> x </button></th>
+                        <th><button className={styles.closeButton}> x </button></th>
                     </tr>
-                    <tr className={styles.rowFirst}>
+                    <tr className={styles.rowFirst} style={{backgroundColor:'orange'}} >
                         <td className={styles.first}>Onibus</td>
                         <td className={styles.first}>Previsão</td>
                     </tr>

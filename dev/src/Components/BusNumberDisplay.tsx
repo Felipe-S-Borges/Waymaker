@@ -3,7 +3,7 @@
 ==============================================================================================
 */
 import React from 'react';
-import styles from '../Styles/BusDisplay.module.css';
+import styles from '../Styles/BusNumberDisplay.module.css';
 import bus_icon from '../Assets/bus_icon.svg';
 
 interface BusProps{
