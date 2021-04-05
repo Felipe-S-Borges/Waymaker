@@ -6,7 +6,7 @@ import track from '../Assets/target.svg';
 import position_icon from '../Assets/position-icon.svg';
 import { Route } from '../Components/Route';
 
-export function RoutesDisplay(){
+export function AllRoutesDisplay(){
 
     return (
 

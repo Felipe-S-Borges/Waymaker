@@ -5,7 +5,7 @@ import { DestinySearch } from './Pages/DestinySearch';
 import { RouteDirections } from './Pages/RouteDirections';
 import { Home } from './Pages/Home';
 import { OnLoad } from './Pages/OnLoad';
-import { RoutesDisplay } from './Pages/RoutesDisplay ';
+import { AllRoutesDisplay } from './Pages/AllRoutesDisplay ';
 
 
 
@@ -20,7 +20,7 @@ function App() {
       
       {/**<DesinyConfirm /> */}
       
-      {/**<RoutesDisplay /> */}
+      {/**<AllRoutesDisplay /> */}
       
       {/**  */}
       <RouteDirections />
