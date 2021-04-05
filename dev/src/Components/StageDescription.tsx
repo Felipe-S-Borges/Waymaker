@@ -36,7 +36,7 @@ export const numericToOrdinal = function(number: number, gender:number) {
 
 }
 
-export function StageDescrition(props: DirectionsProps){
+export function StageDescription(props: DirectionsProps){
     
 
     return(

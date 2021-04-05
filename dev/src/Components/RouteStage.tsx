@@ -8,7 +8,7 @@ import offBoard_icon from '../Assets/offBoard_icon.svg';
 import walkTo_icon from '../Assets/walkTo_icon.svg';
 
 import React from 'react';
-import { StageDescrition } from './StageDescrition';
+import { StageDescription } from './StageDescription';
 
 interface stageProps{
 
@@ -27,11 +27,11 @@ export function RouteStage(props: stageProps){
                 <li>Passo</li>
                 {console.log('stage' + props.stage)}
                 {console.log(props)}
-                <StageDescrition icon={onBoard_icon} direction={'1'} content={props} />
+                <StageDescription icon={onBoard_icon} direction={'1'} content={props} />
 
                 {/**Aqui entra um loop */}
-                <StageDescrition icon={props.busList[0].plataform} direction={'1'} content={props.busList[0]} />
-                <StageDescrition icon={props.busList[1].plataform} direction={'1'} content={props.busList[1]} />
+                <StageDescription icon={props.busList[0].plataform} direction={'1'} content={props.busList[0]} />
+                <StageDescription icon={props.busList[1].plataform} direction={'1'} content={props.busList[1]} />
                 {console.log(props.busList)}
                 {props.busList.length > 3?(
 
@@ -41,7 +41,7 @@ export function RouteStage(props: stageProps){
                     <></>
                 )}
                 
-                <StageDescrition icon={offBoard_icon} direction={'0'} content={props.busList} />
+                <StageDescription icon={offBoard_icon} direction={'0'} content={props.busList} />
                 
 
             </div> 
@@ -52,7 +52,7 @@ export function RouteStage(props: stageProps){
                 <li>Passo</li>
                 {console.log('stage' + props.stage)}
                 {console.log(props)}
-                <StageDescrition icon={walkTo_icon} direction={isList} content={props.busList} />
+                <StageDescription icon={walkTo_icon} direction={isList} content={props.busList} />
                                                                  
             </div>
             
