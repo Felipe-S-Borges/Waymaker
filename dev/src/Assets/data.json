@@ -23,7 +23,7 @@
                 "plataform":"P35",
                 "flag":"green",
                 "prevTime":"23",
-                "isFirst": null,
+                "isSingle": null,
                 "resorces":{
 
                     "wifi": true,
@@ -40,7 +40,7 @@
                 "plataform":"P36",
                 "flag":"green",
                 "prevTime":"23",
-                "isFirst": null,
+                "isSingle": null,
                 "resorces":{
 
                     "wifi": false,
@@ -57,7 +57,7 @@
                 "plataform":"P37",
                 "flag":"green",
                 "prevTime":"23",
-                "isFirst": null,
+                "isSingle": null,
                 "resorces":{
 
                     "wifi": true,
@@ -86,7 +86,7 @@
                 "plataform":"P55",
                 "flag":"violet",
                 "prevTime":"23",
-                "isFirst": null,
+                "isSingle": null,
                 "resorces":{
 
                     "wifi": true,
@@ -102,7 +102,7 @@
                 "plataform":"P56",
                 "flag":"violet",
                 "prevTime":"23",
-                "isFirst": null,
+                "isSingle": null,
                 "resorces":{
 
                     "wifi": true,

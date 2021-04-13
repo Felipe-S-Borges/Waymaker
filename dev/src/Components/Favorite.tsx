@@ -14,7 +14,7 @@ export function Favorite() {
                 <span> 
                     <strong> Casa</strong>
                     <p> 
-                        <BusNumberDisplay flag="green" number="518" isFirst={true}/> 
+                        <BusNumberDisplay flag="green" number="518" isSingle={true}/> 
                         voce está perto deste local</p>
                 </span>
             </span>

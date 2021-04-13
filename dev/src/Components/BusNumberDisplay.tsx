@@ -10,7 +10,7 @@ interface BusProps{
 
     flag:string;
     number:string;
-    isFirst:boolean;
+    isSingle:boolean;
 
 } 
 export function BusNumberDisplay(props: BusProps){
@@ -21,7 +21,7 @@ export function BusNumberDisplay(props: BusProps){
     }
     return(
         <div className={styles.busDisplayConatiner}  style={flag}>
-            {props.isFirst == true?(
+            {props.isSingle == true?(
                 <div><img src={bus_icon} className={styles.busIcon} /></div>
             ):(<div> </div>)}
             

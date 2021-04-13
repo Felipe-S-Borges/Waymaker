@@ -114,7 +114,7 @@ export function StageDescription(props: DirectionsProps){
                             {console.log('mm------')}
                             {console.log(props.content.resorces.wifi)}
                            
-                        <BusNumberDisplay flag={`var(--flag-${props.content.flag})`} number={props.content.number} isFirst={true} />
+                        <BusNumberDisplay flag={`var(--flag-${props.content.flag})`} number={props.content.number} isSingle={true} />
                         <div className={styles.busTitle}> {props.content.name} </div>
                         {/**<div>agora</div>*/}
                         <div className={styles.incosContainer}>
