@@ -27,16 +27,8 @@ export function StageDescription(props: DirectionsProps){
 
         <div className={styles.descritionContainer}>
                     <div>
-                        <div className={styles.icon}>
-                            {props.icon.length > 4?(
-                                <img src={props.icon} className={styles.iconImgPrimary}/>
-                                
-                            ):(
-                                <div className={styles.plataform} > {props.icon}</div>
-                            )}
-                            
-                            
-                        </div>
+                        {/*imagem ou texto*/}
+                        {textOrImage(props.icon)}
                     </div>
                     
                     {props.icon.length > 4?(
@@ -151,4 +143,21 @@ export function StageDescription(props: DirectionsProps){
             
         </div>
     );
+}
+
+function textOrImage(url:string) {
+    
+    return (
+        <div className={styles.icon}>
+            {url.length > 4?(
+                <img src={url} className={styles.iconImgPrimary}/>
+                                
+            ):(
+                <div className={styles.plataform} > {url}</div>
+            )}   
+                            
+        </div>
+    )
+
+    
 }
