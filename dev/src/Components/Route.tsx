@@ -11,13 +11,13 @@ export function Route(){
             <div>1º Rota disponível <span>23 min</span></div>
             <div className={styles.busSequence} >
 
-                <BusNumberDisplay flag='red' number='519 / 1023 / 542 ...' isSingle={false} />
+                <BusNumberDisplay flagColor='red' number='519 / 1023 / 542 ...' isSingle={false} />
                 
                 <span> <img src={changeBus} /></span>
-                <BusNumberDisplay flag='green' number='519 / 501 / 253 ...' isSingle={false}/>
+                <BusNumberDisplay flagColor='green' number='519 / 501 / 253 ...' isSingle={false}/>
                
                 <span> <img src={changeBus} /></span>
-                <BusNumberDisplay flag='purple' number='516' isSingle={false}/>
+                <BusNumberDisplay flagColor='purple' number='516' isSingle={false}/>
                 
             
             </div>

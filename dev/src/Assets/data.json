@@ -21,7 +21,7 @@
                 "number":"518",
                 "name":"Terminal de Carapina",
                 "plataform":"P35",
-                "flag":"green",
+                "flagColor":"green",
                 "prevTime":"23",
                 "isSingle": null,
                 "resorces":{
@@ -38,7 +38,7 @@
                 "number":"535",
                 "name":"Terminal de Carapina",
                 "plataform":"P36",
-                "flag":"green",
+                "flagColor":"green",
                 "prevTime":"23",
                 "isSingle": null,
                 "resorces":{
@@ -55,7 +55,7 @@
                 "number":"536",
                 "name":"Terminal de Carapina",
                 "plataform":"P37",
-                "flag":"green",
+                "flagColor":"green",
                 "prevTime":"23",
                 "isSingle": null,
                 "resorces":{
@@ -84,7 +84,7 @@
                 "number":"548",
                 "name":"Terminal de jacaraipe",
                 "plataform":"P55",
-                "flag":"violet",
+                "flagColor":"violet",
                 "prevTime":"23",
                 "isSingle": null,
                 "resorces":{
@@ -100,7 +100,7 @@
                 "number":"578",
                 "name":"Terminal de Laranjeiras",
                 "plataform":"P56",
-                "flag":"violet",
+                "flagColor":"violet",
                 "prevTime":"23",
                 "isSingle": null,
                 "resorces":{

@@ -8,17 +8,14 @@ import bus_icon from '../Assets/bus_icon.svg';
 
 interface BusProps{
 
-    flag:string;
+    flagColor:string;
     number:string;
     isSingle:boolean;
 
 } 
 export function BusNumberDisplay(props: BusProps){
 
-    const flag = {
-        
-        borderBottomColor: props.flag
-    }
+    const flag = { borderBottomColor: props.flagColor }
     return(
         <div className={styles.busDisplayConatiner}  style={flag}>
             {props.isSingle == true?(
