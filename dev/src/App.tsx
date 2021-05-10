@@ -22,9 +22,9 @@ function App() {
       
       {/**<AllRoutesDisplay /> */}
       
-      {/**  */}
+      {/** <BusModal /> */}
       <RouteDirections />
-      <BusModal />
+      
      
       
       

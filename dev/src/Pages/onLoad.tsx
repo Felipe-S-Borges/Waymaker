@@ -12,7 +12,6 @@ export function OnLoad(){
 
             <img src={logo} alt='Carregando' /> 
 
-
         </div>
     );
 

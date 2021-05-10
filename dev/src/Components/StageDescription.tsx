@@ -10,6 +10,7 @@ import stand from '../Assets/stand_icon.svg';
 import sit from '../Assets/sit_icon.svg';
 import React from 'react';
 import { BusNumberDisplay } from './BusNumberDisplay';
+import { numericToOrdinal } from '../Utils/numericToOrdinal';
 
 interface DirectionsProps{
     icon:string;
@@ -17,24 +18,7 @@ interface DirectionsProps{
     content:any;
 }
 
-export const numericToOrdinal = function(number: number, gender:number) {
 
-    switch(number){
-
-        case 0: return 'erro';
-        case null: return 'erro';
-        case undefined: return 'erro';
-        case 1: return gender == 1?'Primeiro':'Primeira';
-        case 2: return gender == 1?'Segundo':'Segunda';
-        case 3: return gender == 1?'Terceiro':'Terceira';
-        case 4: return gender == 1?'Quarto':'Quarta';
-        case 5: return gender == 1?'Quinto':'Quinta';
-        case 6: return gender == 1?'Sexto':'Sexta';
-        default: return `${number}º`
-           
-    }
-
-}
 
 export function StageDescription(props: DirectionsProps){
     
@@ -64,7 +48,7 @@ export function StageDescription(props: DirectionsProps){
                                  <>
                                  {console.log('stageeee')}
                                  {console.log(props.content.stage)}
-                                 <p> {numericToOrdinal(props.content.stage,1)} embarque</p> 
+                                 <p> {numericToOrdinal({ number: props.content.stage, isFemale: false})} embarque</p> 
                                  {props.content.stage == 1? (
 
                                     <p> Aguarde por algumas dessas opções</p>

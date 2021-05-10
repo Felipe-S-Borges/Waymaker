@@ -13,9 +13,10 @@ import offBoard_icon from '../Assets/offBoard_icon.svg';
 
 import { Route } from '../Components/Route';
 import { RouteStage } from '../Components/RouteStage';
-import { StageDescription, numericToOrdinal } from '../Components/StageDescription';
+import { StageDescription} from '../Components/StageDescription';
 import { AllRoutesDisplay } from './AllRoutesDisplay ';
 import buspath from '../Assets/data.json';
+import { numericToOrdinal } from '../Utils/numericToOrdinal';
 
 
 
@@ -69,7 +70,7 @@ export function RouteDirections(){
                 {/**Rodape */}
                 <div className={styles.directionsBottomHeader}>
 
-                <p> {numericToOrdinal(buspath.routeNumber + 1, 0)} rota disponível</p> <span> {buspath.routeTime} min</span>
+                <p> {numericToOrdinal({number: (buspath.routeNumber + 1), isFemale: true})} rota disponível</p> <span> {buspath.routeTime} min</span>
 
                 </div>
                 
