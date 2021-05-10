@@ -11,14 +11,23 @@ export const numericToOrdinal = function(numberAndGender:NumberAndGenderProps) {
         case 0: return 'erro';
         case null: return 'erro';
         case undefined: return 'erro';
-        case 1: return numberAndGender.isFemale == true?'Primeira':'Primeiro';
-        case 2: return numberAndGender.isFemale == true?'Segunda':'Segundo';
-        case 3: return numberAndGender.isFemale == true?'Terceira':'Terceiro';
-        case 4: return numberAndGender.isFemale == true?'Quarta':'Quarto';
-        case 5: return numberAndGender.isFemale == true?'Quinta':'Quinto';
-        case 6: return numberAndGender.isFemale == true?'Sexta':'Sexto';
+        case 1: return genderSet('Primeir',numberAndGender.isFemale)
+        case 2: return genderSet('Segund',numberAndGender.isFemale)
+        case 3: return genderSet('Terceir',numberAndGender.isFemale)
+        case 4: return genderSet('Quart',numberAndGender.isFemale)
+        case 5: return genderSet('Quint',numberAndGender.isFemale)
+        case 6: return genderSet('Sext',numberAndGender.isFemale)
         default: return `${numberAndGender.number}º`
            
     }
+
+}
+
+function genderSet(string:string, gender:boolean){
+
+    if(gender){
+        return string.concat('','a')
+    }
+    return string.concat('','o')
 
 }
