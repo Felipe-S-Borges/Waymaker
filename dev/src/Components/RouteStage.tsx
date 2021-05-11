@@ -43,9 +43,9 @@ export function RouteStage(props: stageProps){
             <div className={styles.stageContainer}>
                 {inBound(props)}
                 {/**Aqui entra um loop */}
-                {listDisplay(props.busList)}
-                
-                
+                {/*listDisplay(props.busList)*/}
+                <StageDescription icon={props.busList[0].plataform} direction={'1'} content={props.busList[0]} />
+                <StageDescription icon={props.busList[1].plataform} direction={'1'} content={props.busList[1]} />
                 
                
                 
@@ -97,17 +97,21 @@ function outBound(content:any) {
 
 function listDisplay(list:any) {
     console.log("---------------------------")
-    console.log(list)
-    console.log(list[0])
-    
-const busList = list.map((bus:any,index:any) =>{
-        <StageDescription key={index} icon={bus.plataform} direction={'1'} content={bus} />
-    })
-    console.log(busList)
-    return (
-        <>
-        {busList}
-        </>
+    console.log(list.map((bus:any,index:any) =>{
+        if(list.length -1  == index){
+            return ''
+        }
+       
+        return (
+            <>
+            <StageDescription key={index} icon={bus.plataform} direction={'1'} content={bus} />
+            </>
         )
-  
+    }))
+}
+
+function stageSetDesciption(busData:BusContentProps,index:number) {
+
+    return (<StageDescription key={index} icon={busData.plataform} direction={'1'} content={busData} />)
+    
 }

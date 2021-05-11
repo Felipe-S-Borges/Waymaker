@@ -91,7 +91,7 @@ export function RouteDirections(){
             <main>
 
                 <ol>
-                    {console.log(buspath.routeStages)}
+                    {/*console.log(buspath.routeStages)*/}
                     {/**Aqui entra um loop */}
                     <RouteStage stage={0} busList={buspath.routeStages[0]} /> 
                     <RouteStage stage={1} busList={buspath.routeStages[1]} /> 
