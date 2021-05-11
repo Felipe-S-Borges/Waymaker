@@ -16,23 +16,39 @@ interface stageProps{
     busList:any;
 }
 
+interface BusContentProps {
+    number:string;
+    name:string;
+    plataform:string;
+    flagColor:string;
+    prevTime:string;
+    isSingle: null;
+    resorces: ResorcesProps;
+
+}
+
+interface ResorcesProps{
+    wifi: boolean;
+    arCond: boolean;
+    acess: boolean;
+    stand: boolean;
+    sit: string; 
+}
+
 export function RouteStage(props: stageProps){
     console.log(Array.isArray(props.busList) )
     const isList = Array.isArray(props.busList)
     return(
-       
-
         isList?(
             <div className={styles.stageContainer}>
-                <li>Passo</li>
-                {console.log('stage' + props.stage)}
-                {console.log(props)}
-                <StageDescription icon={onBoard_icon} direction={'1'} content={props} />
-
+                {inBound(props)}
                 {/**Aqui entra um loop */}
-                <StageDescription icon={props.busList[0].plataform} direction={'1'} content={props.busList[0]} />
-                <StageDescription icon={props.busList[1].plataform} direction={'1'} content={props.busList[1]} />
-                {console.log(props.busList)}
+                {listDisplay(props.busList)}
+                
+                
+                
+               
+                
                 {props.busList.length > 3?(
 
                     <><hr /><div className={styles.moreOptions} >Mais opções</div></>
@@ -41,23 +57,57 @@ export function RouteStage(props: stageProps){
                     <></>
                 )}
                 
-                <StageDescription icon={offBoard_icon} direction={'0'} content={props.busList} />
+                {outBound(props.busList)}
+                
                 
 
             </div> 
 
         ):(
-            
-            <div className={styles.stageContainer}>
-                <li>Passo</li>
-                {console.log('stage' + props.stage)}
-                {console.log(props)}
-                <StageDescription icon={walkTo_icon} direction={isList} content={props.busList} />
-                                                                 
-            </div>
-            
+            showInstructions(props.busList,isList)
         )
         
 
     );
+}
+
+function showInstructions(instructions:any, isList:boolean) {
+    return (
+        <div className={styles.stageContainer}>
+            <li>Passo</li>
+            <StageDescription icon={walkTo_icon} direction={isList} content={instructions} />                                       
+        </div>
+    )
+}
+
+function inBound(content:any) {
+    return(
+        <>
+        <li>Passo</li>
+            <StageDescription icon={onBoard_icon} direction={'1'} content={content} />
+        </>
+    )
+}
+
+function outBound(content:any) {
+    return (
+        <StageDescription icon={offBoard_icon} direction={'0'} content={content} />
+    )
+}
+
+function listDisplay(list:any) {
+    console.log("---------------------------")
+    console.log(list)
+    console.log(list[0])
+    
+const busList = list.map((bus:any,index:any) =>{
+        <StageDescription key={index} icon={bus.plataform} direction={'1'} content={bus} />
+    })
+    console.log(busList)
+    return (
+        <>
+        {busList}
+        </>
+        )
+  
 }
