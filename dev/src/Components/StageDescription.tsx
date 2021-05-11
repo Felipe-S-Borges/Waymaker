@@ -8,9 +8,9 @@ import wifi from '../Assets/wifi_icon.svg';
 import acess from '../Assets/acess_icon.svg';
 import stand from '../Assets/stand_icon.svg';
 import sit from '../Assets/sit_icon.svg';
-import React from 'react';
 import { BusNumberDisplay } from './BusNumberDisplay';
 import { numericToOrdinal } from '../Utils/numericToOrdinal';
+import { off } from 'node:process';
 
 interface DirectionsProps{
     icon:string;
@@ -18,146 +18,191 @@ interface DirectionsProps{
     content:any;
 }
 
+interface BusContentProps {
+    number:string;
+    name:string;
+    plataform:string;
+    flagColor:string;
+    prevTime:string;
+    isSingle: null;
+    resorces: ResorcesProps;
+
+}
+
+interface ResorcesProps{
+    wifi: boolean;
+    arCond: boolean;
+    acess: boolean;
+    stand: boolean;
+    sit: string; 
+}
+
 
 
 export function StageDescription(props: DirectionsProps){
     
-
     return(
 
         <div className={styles.descritionContainer}>
-                    <div>
-                        {/*imagem ou texto*/}
-                        {textOrImage(props.icon)}
-                    </div>
-                    
-                    {props.icon.length > 4?(
-
-                        //Tru => onBoard   False => offBoard
-                        props.direction?(
-                            <div className={styles.directions}>
-                             {props.direction === "1" ?(
-                                 <>
-                                 {console.log('stageeee')}
-                                 {console.log(props.content.stage)}
-                                 <p> {numericToOrdinal({ number: props.content.stage, isFemale: false})} embarque</p> 
-                                 {props.content.stage == 1? (
-
-                                    <p> Aguarde por algumas dessas opções</p>
-
-                                 ):(
-
-                                     <p> Aguarde por algumas dessas opções na plataforma (P) indicada</p> 
-                                 )}
-                                 
-                                 </>
-                             ):(
-                                <>
-                                <p>Desembarque</p>
-                                {console.log('props f')}
-                                {console.log(props.content[props.content.length -1])}
-                                
-                                {props.content[props.content.length -1].destiny?(
-                                    
-                                    <div>
-                                    <strong> {props.content[props.content.length -1].destiny} </strong>
-                                    </div>
-                                ):(
-                                    <>
-                                    <strong> Desembarque no ponto {props.content[props.content.length -1].identification} </strong> 
-                                    <p>{props.content[props.content.length -1].localization}</p>
-                                    </>
-                                )}
-                                
-                                </>
-                             )}   
-                             
-                           </div>
-                        ):(
-
-                            <div className={styles.directions}>
-
-                            <p> Caminhe até o ponto <span> {props.content.identification} </span></p> 
-                            <p>{props.content.localization}</p>     
-                             
-                              
-                           </div>
-                        )
-                        
-
-                    ):(
-                        <div className={styles.busIcons}>
-                            {console.log('mm------')}
-                            {console.log(props.content.resorces.wifi)}
-                           
-                        <BusNumberDisplay flagColor={`var(--flag-${props.content.flagColor})`} number={props.content.number} isSingle={true} />
-                        <div className={styles.busTitle}> {props.content.name} </div>
-                        {/**<div>agora</div>*/}
-                        <div className={styles.incosContainer}>
-                                {props.content.resorces.arCond?(
-
-                                    <div><img src={arCond} className={styles.iconImgSecondary} /></div>
-                                ):(
-                                    <></>
-                                )}
-
-                                {props.content.resorces.wifi?(
-
-                                    <div><img src={wifi} className={styles.iconImgSecondary} /></div>
-                                ):(
-                                    <></>
-                                )}
-
-
-                                {props.content.resorces.acess?(
-
-                                    <div><img src={acess} className={styles.iconImgSecondary} /></div>
-                                ):(
-                                    <></>
-                                )}
-
-                                {props.content.resorces.stand?(
-
-                                    <div className={styles.popped}><img src={stand} className={`${styles.iconImgSecondary}`} />{`${props.content.resorces.stand}%`}</div>
-                                ):(
-                                    <></>
-                                )}
-
-                                {props.content.resorces.sit?(
-
-                                    <div className={styles.popped}><img src={sit} className={`${styles.iconImgSecondary}`} />{`${props.content.resorces.sit}%`}</div>
-                                ):(
-                                    <></>
-                                )}
-                                </div>
-
-                                                    
-                                
-                            
-                        </div>
-
-                    )}
-
-
-                    
-            
+            <div>                        
+                {textOrImage(props.icon)}
+            </div>
+            {descriptions(props)}        
         </div>
     );
 }
+
+
 
 function textOrImage(url:string) {
     
     return (
         <div className={styles.icon}>
             {url.length > 4?(
-                <img src={url} className={styles.iconImgPrimary}/>
-                                
+                <img src={url} className={styles.iconImgPrimary}/>           
             ):(
-                <div className={styles.plataform} > {url}</div>
-            )}   
-                            
+                <div className={styles.plataform} >{url}</div>
+            )}                       
         </div>
     )
+}
 
+function descriptions(description:DirectionsProps) {
+
+    return(
+        description.icon.length > 4?(
+            walkOrBoard(description)
+        ):(
+            busDescription(description.content)
+        ) 
+    )
+}
+
+function walkOrBoard(description:DirectionsProps) {
+    return(
+        description.direction?(
+            <div className={styles.directions}>
+                {onBoardOroffBoard(description)}   
+            </div>
+        ):(
+            walkToBusStop(description.content)
+        )
+    )
+}
+
+function onBoardOroffBoard(descrition:DirectionsProps) {
     
+    return(
+        descrition.direction === "1" ?(
+            <>
+            <p>{numericToOrdinal({ number: descrition.content.stage, isFemale: false})} embarque</p> 
+            {onBoardDescription(descrition.content.stage)}
+            </>
+        ):(
+           <>
+           <p>Desembarque</p>                               
+           {offBoard(descrition.content)}
+           </>
+        )
+    )
+}
+
+function onBoardDescription(currentStage:number) {
+    
+    return (
+        currentStage == 1? (
+            <p> Aguarde por algumas dessas opções</p>
+         ):(
+            <p> Aguarde por algumas dessas opções na plataforma (P) indicada</p> 
+         )
+    )
+
+}
+
+
+function offBoard(content:any) {
+
+    return (
+        content[content.length -1].destiny?(
+                                    
+            <div>
+                <strong> {content[content.length -1].destiny} </strong>
+            </div>
+        ):(
+            <>
+                <strong> Desembarque no ponto {content[content.length -1].identification} </strong> 
+                <p>{content[content.length -1].localization}</p>
+            </>
+        )
+    )
+    
+}
+
+function walkToBusStop(content:any) {
+
+    return (
+        <div className={styles.directions}>
+
+            <p> Caminhe até o ponto <span> {content.identification} </span></p> 
+            <p>{content.localization}</p>     
+                             
+                              
+        </div>
+    )
+    
+}
+
+
+function busDescription(descriptions:BusContentProps) {
+    return(
+        <div className={styles.busIcons}>
+            <BusNumberDisplay flagColor={`var(--flag-${descriptions.flagColor})`} number={descriptions.number} isSingle={true} />
+            <div className={styles.busTitle}> {descriptions.name} </div>
+            {/**<div>agora</div>*/}
+            {resorces(descriptions.resorces)}         
+        </div>
+    )
+}
+
+function resorces(itens:ResorcesProps) {
+    return(
+        <div className={styles.incosContainer}>
+            {itens.arCond?(
+
+                <div><img src={arCond} className={styles.iconImgSecondary} /></div>
+            ):(
+                <></>
+            )}
+
+            {itens.wifi?(
+
+                <div><img src={wifi} className={styles.iconImgSecondary} /></div>
+            ):(
+                <></>
+            )}
+
+
+            {itens.acess?(
+
+                <div><img src={acess} className={styles.iconImgSecondary} /></div>
+            ):(
+                <></>
+            )}
+
+            {itens.stand?(
+
+                <div className={styles.popped}><img src={stand} className={`${styles.iconImgSecondary}`} />{`${itens.stand}%`}</div>
+            ):(
+                <></>
+            )}
+
+            {itens.sit?(
+
+                <div className={styles.popped}><img src={sit} className={`${styles.iconImgSecondary}`} />{`${itens.sit}%`}</div>
+            ):(
+                <></>
+            )}
+        </div>
+
+    )
 }
