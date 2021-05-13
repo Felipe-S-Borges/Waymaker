@@ -7,7 +7,7 @@ import onBoard_icon from '../Assets/onBoard_icon.svg';
 import offBoard_icon from '../Assets/offBoard_icon.svg';
 import walkTo_icon from '../Assets/walkTo_icon.svg';
 
-import React, { useContext, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { StageDescription } from './StageDescription';
 
 interface stageProps{
@@ -77,8 +77,10 @@ function outBound(content:any) {
     )
 }
 
+let listFlow = false
 function BusListDisplay(list:any) {
-    const [overflow,setOverflow] = useState(2)
+    const [overflow,setOverflow] = useState(list.length)
+    useEffect(()=>{ toggleOverflow() },[listFlow])
     const buses = list.map((bus:any,index:any) =>{
         if(index >= overflow || index == list.length - 1){
             return ''
@@ -104,14 +106,23 @@ function OverflowHandler(list:any) {
     
     return(
         isHidden ?(
-            <><button className={styles.moreOptions} onClick={toggleHiddenOverflow} > <hr />Mais opções</button></>
+            <><button 
+                className={styles.moreOptions} 
+                onClick={toggleHiddenOverflow} 
+                > 
+            <hr />Mais opções</button></>
         ):(
-            <><button className={styles.moreOptions} onClick={toggleHiddenOverflow} > <hr /></button></>
+            <><button 
+                className={styles.moreOptions} 
+                onClick={toggleHiddenOverflow} 
+                > 
+            <hr /></button></>
         )
     )
 
     function toggleHiddenOverflow() {
         setIsHidden(!isHidden)
+        listFlow = !isHidden
         
     }
 }

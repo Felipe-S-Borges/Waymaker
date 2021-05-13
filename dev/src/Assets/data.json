@@ -96,6 +96,39 @@
                     "sit": "90" 
                 }
             },
+            {
+                "number":"671",
+                "name":"Terminal de jacaraipe",
+                "plataform":"P55",
+                "flagColor":"violet",
+                "prevTime":"23",
+                "isSingle": null,
+                "resorces":{
+
+                    "wifi": true,
+                    "arCond": true,
+                    "acess": false,
+                    "stand": false, 
+                    "sit": "90" 
+                }
+            },
+            {
+                "number":"598",
+                "name":"Terminal de jacaraipe",
+                "plataform":"P55",
+                "flagColor":"violet",
+                "prevTime":"23",
+                "isSingle": null,
+                "resorces":{
+
+                    "wifi": true,
+                    "arCond": true,
+                    "acess": false,
+                    "stand": false, 
+                    "sit": "90" 
+                }
+            }
+            ,
             {   
                 "number":"578",
                 "name":"Terminal de Laranjeiras",
