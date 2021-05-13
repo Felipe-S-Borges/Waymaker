@@ -93,27 +93,23 @@ export function RouteDirections(){
                 <ol>
                     {/*console.log(buspath.routeStages)*/}
                     {/**Aqui entra um loop */}
+                    {/*buildStages(buspath.routeStages)*/}
                     <RouteStage stage={0} busList={buspath.routeStages[0]} /> 
                     <RouteStage stage={1} busList={buspath.routeStages[1]} /> 
                     <RouteStage stage={2} busList={buspath.routeStages[2]} /> 
-                    
-                    {/** 
-                    <Stage stage={''}/>
-                    <Stage stage={'1'} />
-                    <Stage stage={'1'} />
-                    <Stage stage={'1'} />
-                    <Stage stage={''} />
-
-                    */}
-                   
 
                 </ol>
 
-                
-
             </main>
-
 
         </div>
     );
+}
+
+function buildStages(stages:any) {
+
+    stages.map((stage:any,index:any)=>{
+        <RouteStage stage={index} busList={stage} /> 
+    })
+    
 }

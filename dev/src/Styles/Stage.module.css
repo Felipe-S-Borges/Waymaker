@@ -18,10 +18,14 @@
 }
 
 .moreOptions{
-
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
     text-align: right;
     padding: 0 1rem;
     color: var(--letter-light-blue);
+    font-size: 0.875rem;
 }
 
 .stageContainer hr{

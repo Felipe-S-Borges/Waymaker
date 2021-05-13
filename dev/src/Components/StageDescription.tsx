@@ -78,11 +78,22 @@ function descriptions(description:DirectionsProps) {
     )
 }
 
+function busDescription(descriptions:BusContentProps) {
+    return(
+        <div className={styles.busIcons}>
+            <BusNumberDisplay flagColor={`var(--flag-${descriptions.flagColor})`} number={descriptions.number} isSingle={true} />
+            <div className={styles.busTitle}> {descriptions.name} </div>
+            {/**<div>agora</div>*/}
+            {resorces(descriptions.resorces)}         
+        </div>
+    )
+}
+
 function walkOrBoard(description:DirectionsProps) {
     return(
         description.direction?(
             <div className={styles.directions}>
-                {onBoardOroffBoard(description)}   
+                {onBoardOrOffBoard(description)}   
             </div>
         ):(
             walkToBusStop(description.content)
@@ -90,7 +101,7 @@ function walkOrBoard(description:DirectionsProps) {
     )
 }
 
-function onBoardOroffBoard(descrition:DirectionsProps) {
+function onBoardOrOffBoard(descrition:DirectionsProps) {
     
     return(
         descrition.direction === "1" ?(
@@ -106,6 +117,21 @@ function onBoardOroffBoard(descrition:DirectionsProps) {
         )
     )
 }
+
+function walkToBusStop(content:any) {
+
+    return (
+        <div className={styles.directions}>
+
+            <p> Caminhe até o ponto <span> {content.identification} </span></p> 
+            <p>{content.localization}</p>     
+                             
+                              
+        </div>
+    )
+    
+}
+
 
 function onBoardDescription(currentStage:number) {
     
@@ -138,31 +164,6 @@ function offBoard(content:any) {
     
 }
 
-function walkToBusStop(content:any) {
-
-    return (
-        <div className={styles.directions}>
-
-            <p> Caminhe até o ponto <span> {content.identification} </span></p> 
-            <p>{content.localization}</p>     
-                             
-                              
-        </div>
-    )
-    
-}
-
-
-function busDescription(descriptions:BusContentProps) {
-    return(
-        <div className={styles.busIcons}>
-            <BusNumberDisplay flagColor={`var(--flag-${descriptions.flagColor})`} number={descriptions.number} isSingle={true} />
-            <div className={styles.busTitle}> {descriptions.name} </div>
-            {/**<div>agora</div>*/}
-            {resorces(descriptions.resorces)}         
-        </div>
-    )
-}
 
 function resorces(itens:ResorcesProps) {
     return(

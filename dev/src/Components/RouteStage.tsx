@@ -7,7 +7,7 @@ import onBoard_icon from '../Assets/onBoard_icon.svg';
 import offBoard_icon from '../Assets/offBoard_icon.svg';
 import walkTo_icon from '../Assets/walkTo_icon.svg';
 
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { StageDescription } from './StageDescription';
 
 interface stageProps{
@@ -42,32 +42,14 @@ export function RouteStage(props: stageProps){
         isList?(
             <div className={styles.stageContainer}>
                 {inBound(props)}
-                {/**Aqui entra um loop */}
-                {/*listDisplay(props.busList)*/}
-                <StageDescription icon={props.busList[0].plataform} direction={'1'} content={props.busList[0]} />
-                <StageDescription icon={props.busList[1].plataform} direction={'1'} content={props.busList[1]} />
-                
-               
-                
-                {props.busList.length > 3?(
-
-                    <><hr /><div className={styles.moreOptions} >Mais opções</div></>
-
-                ):(
-                    <></>
-                )}
-                
+                {BusListDisplay(props.busList)}
+                {OverflowHandler(props.busList)}
                 {outBound(props.busList)}
-                
-                
-
             </div> 
 
         ):(
             showInstructions(props.busList,isList)
         )
-        
-
     );
 }
 
@@ -95,23 +77,41 @@ function outBound(content:any) {
     )
 }
 
-function listDisplay(list:any) {
-    console.log("---------------------------")
-    console.log(list.map((bus:any,index:any) =>{
-        if(list.length -1  == index){
+function BusListDisplay(list:any) {
+    const [overflow,setOverflow] = useState(2)
+    const buses = list.map((bus:any,index:any) =>{
+        if(index >= overflow || index == list.length - 1){
             return ''
         }
-       
         return (
-            <>
             <StageDescription key={index} icon={bus.plataform} direction={'1'} content={bus} />
-            </>
         )
-    }))
+    })
+    return buses
+
+    function toggleOverflow() {
+        if(overflow > 2){
+            setOverflow(2)
+        }else{
+            setOverflow(list.length)
+        }
+    }
 }
 
-function stageSetDesciption(busData:BusContentProps,index:number) {
-
-    return (<StageDescription key={index} icon={busData.plataform} direction={'1'} content={busData} />)
+function OverflowHandler(list:any) {
+    const isOverflow = list.length > 3
+    const [isHidden, setIsHidden] = useState(isOverflow)
     
+    return(
+        isHidden ?(
+            <><button className={styles.moreOptions} onClick={toggleHiddenOverflow} > <hr />Mais opções</button></>
+        ):(
+            <><button className={styles.moreOptions} onClick={toggleHiddenOverflow} > <hr /></button></>
+        )
+    )
+
+    function toggleHiddenOverflow() {
+        setIsHidden(!isHidden)
+        
+    }
 }
