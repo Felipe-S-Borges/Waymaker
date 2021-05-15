@@ -34,59 +34,17 @@ export function RouteDirections(){
        
     }
     */
-
-
-    
     return (
 
         <div className={styles.directionsContainer}>
-        {/**=========================================================================================== 
-         *  header 
-         *      cabeçalho
-         *      Mapa
-         *      Menu Lateral
-         *      Rodape
-         * =========================================================================================== 
-        */}
             <header>
-
-                <div className={styles.topBar}>  
-
-                   <button className={styles.iconButton} > <img src={back} /> </button>
-                   <p className={styles.titleDirections}>
-                        Direções
-                    </p>
-                </div>
-
-                {/**Mapa com o trajeto marcado */}
-                <div className={styles.mapsContainer}>
-
-                   <img src={map} className={styles.maps} />
-
-                </div>
-
+                {topBar()}
+                {mapsDisplay()}
                 {/**Componte menu da barra lateral */}
-
-                {/**Rodape */}
-                <div className={styles.directionsBottomHeader}>
-
-                <p> {numericToOrdinal({number: (buspath.routeNumber + 1), isFemale: true})} rota disponível</p> <span> {buspath.routeTime} min</span>
-
-                </div>
+                {footer()}
+                
                 
             </header>
-            {/**=========================================================================================== */}
-
-
-
-
-
-            {/**===========================================================================================  
-             * main 
-             *      ol
-             *      Stage -- Representa cada estágio do trajeto com numeração
-             * =========================================================================================== 
-            */}
             <main>
                 <ol>
                     {buildStages(buspath.routeStages)}
@@ -104,5 +62,37 @@ function buildStages(stages:any) {
     })
 
     return stagesList
+    
+}
+
+function topBar() {
+    return(
+        <div className={styles.topBar}>  
+
+            <button className={styles.iconButton} > <img src={back} /> </button>
+            <p className={styles.titleDirections}>
+                Direções
+            </p>
+        </div>
+    )
+}
+
+function mapsDisplay() {
+    return(   
+        <div className={styles.mapsContainer}>
+            <img src={map} className={styles.maps} />
+        </div>
+        )
+}
+
+function footer() {
+    return(
+    <div className={styles.directionsBottomHeader}>
+        <p> {numericToOrdinal({number: (buspath.routeNumber + 1), isFemale: true})} rota disponível</p> <span> {buspath.routeTime} min</span>
+    </div>
+    )
+}
+
+function sideBarMenu() {
     
 }
