@@ -20,10 +20,10 @@ function App() {
       
       {/**<DesinyConfirm /> */}
       
-      {/**<AllRoutesDisplay /> */}
+      <AllRoutesDisplay /> 
       
       {/** <BusModal /> */}
-      <RouteDirections />
+     {/* <RouteDirections />*/}
       
      
       

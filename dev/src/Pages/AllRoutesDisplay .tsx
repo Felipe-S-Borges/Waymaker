@@ -5,13 +5,14 @@ import switchArrow from '../Assets/switch.svg';
 import track from '../Assets/target.svg';
 import position_icon from '../Assets/position-icon.svg';
 import { Route } from '../Components/Route';
+import routes from '../Assets/data.json'
 
 export function AllRoutesDisplay(){
 
     return (
-
+        
         <div className={styles.DesinyConfirmContainer}>
-
+           
             <header>
 
                 <div>  
@@ -43,23 +44,29 @@ export function AllRoutesDisplay(){
 
                 </div>
                 <div className={styles.displayHeader}>
-                    <p> Foram encontradas 2 rotas disponíveis</p>
+                    <p> {`Foram encontradas ${routes.allRoutesNumber} rotas disponíveis`}</p>
                 </div>
 
 
             </header>
 
             {/**Rotas */}
-            <main>
-
-                <Route />
-                <Route />
-                <Route />
-                <Route />
-
-            </main>
+            {routesDisplay()}
 
 
         </div>
     );
+}
+
+function routesDisplay() {
+    return(
+        <main>
+
+            <Route />
+            <Route />
+            <Route />
+            <Route />
+
+        </main>
+    )
 }
