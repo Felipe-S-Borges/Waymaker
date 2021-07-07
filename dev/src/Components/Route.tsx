@@ -2,12 +2,19 @@
 import styles from '../Styles/Route.module.css';
 import changeBus from '../Assets/bus_Change.svg';
 import { BusNumberDisplay } from './BusNumberDisplay';
+import { useHistory } from 'react-router-dom';
 
 export function Route(){
 
+    const history = useHistory();
+
+    function handleClickSelectedRoute() {
+        history.push("/routeDirections")
+    }
+
     return (
 
-        <div className={styles.routeContainer} >
+        <div className={styles.routeContainer} onClick={handleClickSelectedRoute} >
             <div>1º Rota disponível <span>23 min</span></div>
             <div className={styles.busSequence} >
 

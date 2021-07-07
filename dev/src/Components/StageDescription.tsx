@@ -11,6 +11,7 @@ import sit from '../Assets/sit_icon.svg';
 import { BusNumberDisplay } from './BusNumberDisplay';
 import { numericToOrdinal } from '../Utils/numericToOrdinal';
 import { off } from 'node:process';
+import { useHistory } from 'react-router-dom';
 
 interface DirectionsProps{
     icon:string;
@@ -40,10 +41,15 @@ interface ResorcesProps{
 
 
 export function StageDescription(props: DirectionsProps){
+    const history = useHistory();
+
+    function handleClickSelectedBus() {
+        history.push("/onibus")
+    }
     
     return(
 
-        <div className={styles.descritionContainer}>
+        <div className={styles.descritionContainer} onClick={handleClickSelectedBus} >
             <div>                        
                 {textOrImage(props.icon)}
             </div>

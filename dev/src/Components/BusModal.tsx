@@ -1,8 +1,13 @@
+import { useHistory } from 'react-router-dom';
 import styles from '../Styles/BusModal.module.css';
 
 
 export function BusModal() {
-    
+    const history = useHistory();
+
+    function handleClickCloseModal() {
+        history.push("/routeDirections")
+    }
     return (
 
         <div className={styles.modalContainer}>
@@ -12,7 +17,7 @@ export function BusModal() {
                 <table>
                     <tr >
                         <th>Ponto <strong>20352</strong></th>
-                        <th><button className={styles.closeButton}> x </button></th>
+                        <th><button className={styles.closeButton} onClick={handleClickCloseModal}> x </button></th>
                     </tr>
                     <tr className={styles.rowFirst} style={{backgroundColor:'orange'}} >
                         <td className={styles.first}>Onibus</td>

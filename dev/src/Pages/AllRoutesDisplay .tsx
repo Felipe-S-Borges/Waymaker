@@ -6,8 +6,14 @@ import track from '../Assets/target.svg';
 import position_icon from '../Assets/position-icon.svg';
 import { Route } from '../Components/Route';
 import routes from '../Assets/data.json'
+import { useHistory } from 'react-router-dom';
 
 export function AllRoutesDisplay(){
+    const history = useHistory();
+
+    function handleClickToSearch() {
+        history.push("/search")
+    }
 
     return (
         
@@ -17,7 +23,7 @@ export function AllRoutesDisplay(){
 
                 <div>  
 
-                   <button className={styles.iconButton} > <img src={back} /> </button>
+                   <button className={styles.iconButton} onClick={handleClickToSearch} > <img src={back} /> </button>
                    <button className={styles.imputButton} >
                        <img src={track} />
                        Sua localização atual

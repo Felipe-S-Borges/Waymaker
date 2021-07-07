@@ -17,6 +17,7 @@ import { StageDescription} from '../Components/StageDescription';
 import { AllRoutesDisplay } from './AllRoutesDisplay ';
 import buspath from '../Assets/data.json';
 import { numericToOrdinal } from '../Utils/numericToOrdinal';
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -34,11 +35,20 @@ export function RouteDirections(){
        
     }
     */
+
+    const history = useHistory();
+
+    function handleClickToRoutes() {
+        history.push("/routesDisplay")
+    }
+
+
+
     return (
 
         <div className={styles.directionsContainer}>
             <header>
-                {topBar()}
+                {topBar(handleClickToRoutes)}
                 {mapsDisplay()}
                 {/**Componte menu da barra lateral */}
                 {footer()}
@@ -65,11 +75,13 @@ function buildStages(stages:any) {
     
 }
 
-function topBar() {
+function topBar(backDestiny:any) {
+    
+
     return(
         <div className={styles.topBar}>  
 
-            <button className={styles.iconButton} > <img src={back} /> </button>
+            <button className={styles.iconButton} onClick={backDestiny} > <img src={back} /> </button>
             <p className={styles.titleDirections}>
                 Direções
             </p>
