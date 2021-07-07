@@ -4,8 +4,16 @@ import position_icon from '../Assets/position-icon.svg';
 import React from 'react';
 import { Messager } from '../Components/Messager';
 import { Favorite } from '../Components/Favorite';
+import menu from '../Assets/menu-fill.svg';
+import { useHistory } from 'react-router';
 
 export function Home() {
+
+    const history = useHistory();
+
+    function handleClickSearch() {
+        history.push("/search")
+    }
 
     return(
 
@@ -13,11 +21,11 @@ export function Home() {
             
             <header>
                 <div>
-                    <span>menu</span>
+                    <button className={styles.menu}><img src={menu} alt="menu icon" /></button>
                     <span>Vitória - ES</span>
                 </div>
                 <div>
-                    <button className={styles.searchLocation} >
+                    <button className={styles.searchLocation} onClick={handleClickSearch} >
                          <img src={position_icon} width='18' />
                          Para onde deseja ir?
                     </button>

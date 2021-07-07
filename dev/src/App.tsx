@@ -12,8 +12,8 @@ import { AllRoutesDisplay } from './Pages/AllRoutesDisplay ';
 
 
 function App() {
+  
   return (
-    
     <BrowserRouter>
       <Route path="/" exact component={Home}/>
       <Route path="/onLoad"  component={OnLoad}/>
@@ -22,14 +22,7 @@ function App() {
       <Route path="/routesDisplay"  component={AllRoutesDisplay}/>
       <Route path="/routeDirections"  component={RouteDirections}/>
       <Route path="/onibus"  component={BusModal}/>
-    </BrowserRouter>
-     
-      
-      
-                              
-      
-     
-    
+    </BrowserRouter>     
   );
 }
 

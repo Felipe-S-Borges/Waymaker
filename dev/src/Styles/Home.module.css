@@ -86,3 +86,8 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+
+.menu{
+    background: transparent;
+    border: none;
+}
